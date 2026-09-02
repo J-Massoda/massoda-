@@ -1943,3 +1943,18 @@ p:last-child { margin-bottom: 0; }
 }
 .blog-post__body ul, .blog-post__body ol { padding-left: 1.25rem; margin-bottom: 1rem; }
 .blog-post__body li { color: var(--text-muted); line-height: 1.8; margin-bottom: 0.4rem; }
+
+/* Responsive blog post imagery */
+.blog-post__visual {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.75rem 0 2.25rem;
+  border: 1px solid var(--outline-light);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+}
+
+.blog-post__visual--featured {
+  margin-top: 0;
+}

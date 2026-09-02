@@ -4,17 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="canonical" href="https://massoda.me/blog/great-cloud-storage-consolidation.html" />
-  <title>The Great Cloud Storage Consolidation: How a Handful of Companies Control the Internet's Data &mdash; Massoda</title>
+  <title>The Great Cloud Consolidation: How Three Companies Came to Dominate Cloud Infrastructure &mdash; Massoda</title>
   <meta name="description" content="AWS, Azure, and Google Cloud now control roughly two-thirds of global cloud infrastructure spending. Here's what that concentration actually means for developers, pricing, and vendor lock-in." />
   <link rel="icon" href="../media/favicon.png" type="image/png" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="The Great Cloud Storage Consolidation: How a Handful of Companies Control the Internet's Data &mdash; Massoda" />
+  <meta property="og:title" content="The Great Cloud Consolidation: How Three Companies Came to Dominate Cloud Infrastructure &mdash; Massoda" />
   <meta property="og:description" content="AWS, Azure, and Google Cloud now control roughly two-thirds of global cloud infrastructure spending. Here's what that concentration actually means for developers, pricing, and vendor lock-in." />
-  <meta property="og:image" content="../media/og-cover.jpg" />
+  <meta property="og:image" content="https://massoda.me/media/cloud-consolidation.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="The Great Cloud Storage Consolidation: How a Handful of Companies Control the Internet's Data &mdash; Massoda" />
+  <meta name="twitter:title" content="The Great Cloud Consolidation: How Three Companies Came to Dominate Cloud Infrastructure &mdash; Massoda" />
   <meta name="twitter:description" content="AWS, Azure, and Google Cloud now control roughly two-thirds of global cloud infrastructure spending. Here's what that concentration actually means for developers, pricing, and vendor lock-in." />
-  <meta name="twitter:image" content="../media/og-cover.jpg" />
+  <meta name="twitter:image" content="https://massoda.me/media/cloud-consolidation.png" />
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,13 +24,14 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "The Great Cloud Storage Consolidation: How a Handful of Companies Control the Internet's Data",
+  "headline": "The Great Cloud Consolidation: How Three Companies Came to Dominate Cloud Infrastructure",
   "description": "AWS, Azure, and Google Cloud now control roughly two-thirds of global cloud infrastructure spending. Here's what that concentration actually means for developers, pricing, and vendor lock-in.",
   "author": {
     "@type": "Person",
     "name": "Emilien Massoda",
     "url": "https://massoda.me/"
   },
+  "image": "https://massoda.me/media/cloud-consolidation.png",
   "url": "https://massoda.me/blog/great-cloud-storage-consolidation.html"
 }
   </script>
@@ -99,6 +100,17 @@
 
   <div class="blog-post__body">
 
+    <img
+      src="../media/cloud-consolidation.png"
+      alt="Diagram showing AWS, Microsoft, and Google Cloud accounting for 63 percent of global cloud infrastructure spending and powering much of the digital economy"
+      class="blog-post__visual blog-post__visual--featured"
+      width="1672"
+      height="941"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+    />
+
     <p>
       The modern internet may feel decentralized, but much of the infrastructure underneath it
       is increasingly concentrated in the hands of a few companies.
@@ -127,6 +139,16 @@
 
 
     <h2>How We Got Here</h2>
+
+    <img
+      src="../media/how-we-got-here.png"
+      alt="Flow diagram showing how high fixed costs and scale advantages helped AWS, Microsoft Azure, and Google Cloud concentrate the cloud infrastructure market"
+      class="blog-post__visual"
+      width="1672"
+      height="941"
+      loading="lazy"
+      decoding="async"
+    />
 
     <p>
       Cloud infrastructure is an extraordinarily capital-intensive business.
@@ -201,6 +223,16 @@
       But concentration creates trade-offs.
     </p>
 
+    <img
+      src="../media/what-concentration-means.png"
+      alt="Diagram showing how a concentrated cloud market can create pricing power, vendor lock-in, and a wider outage blast radius"
+      class="blog-post__visual"
+      width="1672"
+      height="941"
+      loading="lazy"
+      decoding="async"
+    />
+
     <ul>
       <li>
         <strong>Switching costs can reduce customer flexibility.</strong>
@@ -233,6 +265,16 @@
       Vendor lock-in is often discussed as an engineering issue, but it can also become a
       strategic business problem.
     </p>
+
+    <img
+      src="../media/vendor-lock-in.png"
+      alt="Flow diagram showing how proprietary APIs, managed databases, identity tooling, and data egress can increase switching costs and migration complexity"
+      class="blog-post__visual"
+      width="1672"
+      height="941"
+      loading="lazy"
+      decoding="async"
+    />
 
     <p>
       Every provider-specific dependency can make an application easier to build today while
@@ -278,6 +320,16 @@
       Those requirements favor organizations that already operate infrastructure at hyperscale.
     </p>
 
+    <img
+      src="../media/may-increase-concentration.png"
+      alt="Feedback-loop diagram showing AI demand driving GPU infrastructure investment, improved AI services, and more enterprise cloud workloads"
+      class="blog-post__visual"
+      width="1672"
+      height="941"
+      loading="lazy"
+      decoding="async"
+    />
+
     <p>
       Generative AI has become one of the primary drivers behind the recent acceleration in
       cloud infrastructure spending. That creates an important feedback loop: more AI demand
@@ -313,6 +365,16 @@
     <p>
       The better lesson is to understand <strong>where your dependencies are being created</strong>.
     </p>
+
+    <img
+      src="../media/the-practical-response.png"
+      alt="Decision framework for understanding dependencies, choosing a single-cloud, multi-cloud, or hybrid strategy, and evaluating cost, complexity, resilience, and portability"
+      class="blog-post__visual"
+      width="1672"
+      height="941"
+      loading="lazy"
+      decoding="async"
+    />
 
     <p>
       Development teams should know which components of their architecture are relatively
