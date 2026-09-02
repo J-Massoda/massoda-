@@ -423,7 +423,7 @@
 
         var serviceName = form.getAttribute('data-service') || 'Creative Portfolio';
 
-        fetch('https://formsubmit.co/ajax/emilienmassoda@gmail.com', {
+        fetch('https://formsubmit.co/ajax/hello@massoda.me', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify({
@@ -432,7 +432,7 @@
             message: msgEl.value.trim(),
             _subject: serviceName + ' Enquiry from ' + nameEl.value.trim(),
             _replyto: emailEl.value.trim(),
-            _cc: 'jeanemilien.massoda@gmail.com'
+            _cc: 'emilienmassoda@gmail.com,jeanemilien.massoda@gmail.com'
           })
         })
         .then(function (r) { return r.json(); })
@@ -467,12 +467,13 @@
         var btn = form.querySelector('.cp-newsletter__btn');
         var origHTML = btn.innerHTML;
 
-        fetch('https://formsubmit.co/ajax/emilienmassoda@gmail.com', {
+        fetch('https://formsubmit.co/ajax/hello@massoda.me', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify({
             email: emailEl.value.trim(),
-            _subject: 'New Newsletter Signup'
+            _subject: 'New Newsletter Signup',
+            _cc: 'emilienmassoda@gmail.com'
           })
         })
         .then(function (r) { return r.json(); })

@@ -449,7 +449,7 @@
       submitBtn.textContent = 'Sending…';
       submitBtn.disabled = true;
 
-      fetch('https://formsubmit.co/ajax/emilienmassoda@gmail.com', {
+      fetch('https://formsubmit.co/ajax/hello@massoda.me', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -460,6 +460,7 @@
           email:    emailEl.value.trim(),
           message:  msgEl.value.trim(),
           _subject: 'Portfolio Enquiry from ' + nameEl.value.trim(),
+          _cc: 'emilienmassoda@gmail.com',
           _replyto: emailEl.value.trim()
         })
       })
