@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found &mdash; Massoda</title>
+  <meta name="description" content="The page you're looking for doesn't exist." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="media/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <style>
+    .error-404 {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-404__code {
+      font-family: var(--font-display);
+      font-size: clamp(6rem, 20vw, 12rem);
+      line-height: 0.9;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .error-404__title {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+    .error-404__text {
+      color: var(--text-muted);
+      max-width: 32rem;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .error-404__actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="error-404">
+    <div class="error-404__code">404</div>
+    <h1 class="error-404__title">This page took a wrong turn</h1>
+    <p class="error-404__text">The page you're looking for doesn't exist, may have moved, or the link might be broken. Let's get you back on track.</p>
+    <div class="error-404__actions">
+      <a href="/" class="btn btn--accent">Back to home</a>
+      <a href="/portfolio/index.html" class="btn">View portfolio</a>
+    </div>
+  </div>
+
+</body>
+</html>

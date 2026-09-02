@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://massoda.me/creative-portfolio/blog-how-to-animate-a-logo-in-procreate-dreams.html" />
+  <title>How to Animate a Logo in Procreate Dreams: A Beginner-Friendly Process | Massoda</title>
+  <meta name="description" content="A step-by-step look at how I animate logos in Procreate Dreams — from a static mark to a polished, looping brand animation." />
+  <meta property="og:title" content="How to Animate a Logo in Procreate Dreams: A Beginner-Friendly Process" />
+  <meta property="og:image" content="media/video/fuse-loop-poster.jpg" />
+  <meta property="og:type" content="article" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="creative.css" />
+</head>
+<body>
+
+<!-- PAGE VEIL -->
+  <div class="cp-veil visible"></div>
+
+  <!-- HAMBURGER -->
+  <button class="cp-hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <div class="cp-hamburger__icon"><span></span><span></span><span></span></div>
+    <div class="cp-hamburger__label">
+      <span class="cp-hamburger__label--menu">Menu</span>
+      <span class="cp-hamburger__label--back">Back</span>
+    </div>
+  </button>
+
+  <!-- MENU OVERLAY -->
+  <div class="cp-menu" role="dialog" aria-label="Navigation menu">
+    <div class="cp-menu__overlay"></div>
+    <div class="cp-menu__panel">
+      <nav class="cp-menu__links">
+        <a href="index.html" class="cp-menu__link active" data-page-link>
+          <span class="cp-menu__link-text">Home</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="index.html#projects" class="cp-menu__link">
+          <span class="cp-menu__link-text">Projects</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="index.html#video" class="cp-menu__link">
+          <span class="cp-menu__link-text">Video</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="index.html#process" class="cp-menu__link">
+          <span class="cp-menu__link-text">Process</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="index.html#art" class="cp-menu__link">
+          <span class="cp-menu__link-text">Art</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="index.html#services" class="cp-menu__link">
+          <span class="cp-menu__link-text">Services</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="index.html#contact" class="cp-menu__link">
+          <span class="cp-menu__link-text">Contact</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="blog.html" class="cp-menu__link" data-page-link>
+          <span class="cp-menu__link-text">Blog</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+      </nav>
+      <div class="cp-menu__bottom">
+        <div class="cp-menu__logo">
+          <img src="media/massoda-x-mark.svg" alt="Massoda" />
+        </div>
+        <div class="cp-menu__social">
+          <a href="https://www.instagram.com/fauxverse?igsh=bGNhYmxqZzVmeXVh" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://youtube.com/@fauxverse?si=PMcxbxpLp25F6SkK" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://x.com/Massoda24" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="cp-navbar" aria-label="Quick navigation">
+    <a href="../index.html" class="cp-navbar__back">&#x2190; Dev Portfolio</a>
+    <div class="cp-navbar__social">
+      <a href="https://www.instagram.com/fauxverse?igsh=bGNhYmxqZzVmeXVh" target="_blank" rel="noopener noreferrer" class="cp-navbar__social-link" aria-label="Fauxverse Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+    </div>
+  </nav>
+  <a href="index.html" class="cp-navbar__logo" data-page-link>
+    <img src="media/massoda-x-mark.svg" alt="Massoda" />
+  </a>
+
+  
+  <div class="cp-post-section">
+    <div class="cp-post-sticky-bg">
+      <div class="cp-post-sticky-bg__img" style="background-image:url('media/video/fuse-loop-poster.jpg')"></div>
+    </div>
+    <article class="cp-post-content">
+      <a href="blog.html" class="cp-post-back" data-page-link>
+        <span style="transform:rotate(180deg);display:inline-block;">&#x2192;</span>
+        Back to blog
+      </a>
+      <h1 class="cp-post-h1">How to Animate a Logo in Procreate Dreams: A Beginner-Friendly Process</h1>
+      <p class="cp-post-meta">By Massoda &nbsp;&bull;&nbsp; Tutorial &nbsp;&bull;&nbsp; 2026</p>
+      <div class="cp-richtext">
+        <p>Logo animation looks intimidating from the outside — like it needs a full motion graphics suite and years of After Effects experience. It doesn't. Some of the cleanest logo animations I've built, including the ones for Fuse and Bp&eacute;tale, were done almost entirely in Procreate Dreams, starting from a plain static mark.</p>
+
+        <h3>Start With a Logo That Already Wants to Move</h3>
+        <p>Before opening Procreate Dreams at all, look at the static logo itself. Does it have a curve, a swoosh, a letterform that implies direction? Fuse's wordmark has a soft, looping "s" that already reads as motion even sitting still — that's what made it a natural first animation project. If your logo is very rigid and geometric, that's fine too, but the animation approach will lean more toward a clean reveal than an organic trace.</p>
+
+        <h3>Sketch the Motion Before You Animate It</h3>
+        <p>The biggest mistake people make jumping into logo animation is opening the animation tool first. Sketch the motion on paper or in a few static frames first: what draws in first, what settles last, how long the whole thing should run. A logo animation that runs longer than 2-3 seconds usually overstays its welcome as a brand ident.</p>
+
+        <h3>Building It in Procreate Dreams</h3>
+        <p>Once the motion is planned, Procreate Dreams lets you build it frame by frame or with its animation timeline tools depending on the complexity. For something like a wordmark tracing itself in, I work close to the original letterforms — animating strokes to follow the mark's actual paths rather than adding unrelated flourishes. The goal is always that the animation should look like it belongs to the logo, not like an effect layered on top of it.</p>
+
+        <h3>Keep the Loop Honest</h3>
+        <p>If the animation is going to loop (for a website hero, a social post, a video intro), the first and last frame need to connect cleanly — no visible jump cut. I usually build in a beat of stillness at the end before the loop restarts, which reads as intentional rather than glitchy.</p>
+
+        <h3>Export for Where It's Actually Going</h3>
+        <p>A logo animation destined for a website loop should be exported as a lightweight MP4 or WebM, not a GIF — GIFs are far larger for the same visual quality and don't support the same colour depth. For social platforms, export at the aspect ratio the platform actually uses rather than cropping after the fact.</p>
+
+        <p>If you've got a static logo sitting unused because animating it feels like a bigger project than it is — it's usually a lot more approachable than it looks. I take on logo animation commissions if you'd rather hand it off entirely.</p>
+      </div>
+    </article>
+  </div>
+
+  <footer class="cp-footer">
+    <div class="cp-newsletter">
+      <div class="cp-newsletter__label">Get occasional updates on new work</div>
+      <form class="cp-newsletter__form" novalidate>
+        <input type="email" class="cp-newsletter__input" placeholder="Your email" required autocomplete="email" />
+        <button type="submit" class="cp-newsletter__btn" aria-label="Subscribe">&#8594;</button>
+      </form>
+    </div>
+
+    <a href="index.html" class="cp-footer__logo" data-page-link>
+      <img src="media/massoda-x-mark.svg" alt="Massoda" />
+    </a>
+    <p class="cp-footer__copy">&copy; 2025 Massoda. All rights reserved.</p>
+  </footer>
+  <script src="creative.js"></script>
+</body>
+</html>

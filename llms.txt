@@ -1,0 +1,42 @@
+# Massoda
+
+> Emilien Massoda is a frontend developer & designer with 7+ years of experience building interactive web, mobile, and e-commerce experiences. Available for freelance and contract work.
+
+Massoda specializes in frontend engineering (React, Next.js, WordPress/WooCommerce), UI/UX design, interaction & motion design, mobile application development, web application development, and data analytics. A separate creative practice covers illustration, logo animation, and motion design under the Fauxverse studio.
+
+## Services
+
+- [UI/UX Design](https://massoda.me/services/web-design.html): User-centred design, wireframes, prototypes, and design systems.
+- [Interaction & Motion Design](https://massoda.me/services/interaction-design.html): Micro-interactions, scroll-driven animation, transition systems.
+- [Frontend Engineering](https://massoda.me/services/web-development.html): Production frontend development, Core Web Vitals, accessibility, component architecture.
+- [Mobile Application Development](https://massoda.me/services/mobile-application.html): Cross-platform mobile engineering with React Native and Flutter.
+- [Web Application Development](https://massoda.me/services/web-application.html): Scalable SaaS and enterprise web application frontend engineering.
+- [Machine Learning Engineering](https://massoda.me/services/machine-learning.html): ML system design and deployment.
+- [Data Analytics & Intelligence](https://massoda.me/services/data-analytics.html): Dashboards, ETL pipelines, KPI frameworks.
+
+## Featured Case Studies
+
+- [Mobi-Kumbu](https://massoda.me/portfolio/mobikumbu.html): Full-stack mobile money and USSD wallet platform — mobile app, web dashboard, backend, and AWS infrastructure, serving five countries.
+- [FreshBox Tech Marketplace](https://massoda.me/portfolio/freshbox-tech-marketplace.html): Multi-vendor B2B marketplace built on WooCommerce and WCFM with a custom mega-menu system.
+- [Residences Loumia](https://massoda.me/portfolio/residences-loumia.html): UI/UX design and GSAP interaction work for a multi-property luxury hospitality platform.
+- [Bpétale](https://massoda.me/portfolio/bpetale-ltd.html): Multi-brand WordPress/Elementor design system spanning Natural Essence skincare, Travels & Tours, and Krunchies.
+- [Eth AI Forecaster](https://massoda.me/portfolio/eth-ai-forecaster.html): Python/Jupyter machine learning project forecasting Ethereum price movement from historical data.
+- [Phenotyping Flow](https://massoda.me/portfolio/phenotyping-flow.html): Interaction design for a hospital/lab hardware control interface, designed in Figma.
+- [Fashionista Africa](https://massoda.me/portfolio/fashionista-africa.html): WordPress build for an African fashion brand.
+- [Leads Tracker](https://massoda.me/portfolio/leads-tracker.html): Chrome Extension for saving URLs to revisit later.
+- [Agribusiness](https://massoda.me/portfolio/agribusiness.html): In-progress frontend for an affiliate agri-business marketplace.
+- [Sneaker Shop](https://massoda.me/portfolio/sneaker-shop.html): Responsive single-page landing design concept.
+
+## Creative Portfolio
+
+- [Creative Portfolio](https://massoda.me/creative-portfolio/index.html): Illustration, logo animation, and motion design work, including original character/story development under the Fauxverse studio.
+
+## Blog
+
+- [Blog](https://massoda.me/blog/index.html): Industry analysis and technical writing on AI infrastructure, cloud computing, AWS, and DevOps trends.
+
+## Contact
+
+- [Schedule a call](https://calendly.com/emilienmassoda/30-minutes-with-massoda)
+- [LinkedIn](https://www.linkedin.com/in/jean-emilien-l-59b7061a9)
+- [GitHub](https://github.com/J-Massoda)

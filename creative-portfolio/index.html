@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://massoda.me/creative-portfolio/index.html" />
+  <title>Massoda — Creative Portfolio</title>
+  <meta name="description" content="Massoda — visual artist, illustrator, and animation creator. Procreate illustrations, logo animations, Disney-inspired ads, and the Fauxverse animation studio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="creative.css" />
+</head>
+<body>
+
+  <!-- PAGE VEIL -->
+  <div class="cp-veil visible"></div>
+
+  <!-- HAMBURGER -->
+  <button class="cp-hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <div class="cp-hamburger__icon"><span></span><span></span><span></span></div>
+    <div class="cp-hamburger__label">
+      <span class="cp-hamburger__label--menu">Menu</span>
+      <span class="cp-hamburger__label--back">Back</span>
+    </div>
+  </button>
+
+  <!-- MENU OVERLAY -->
+  <div class="cp-menu" role="dialog" aria-label="Navigation menu">
+    <div class="cp-menu__overlay"></div>
+    <div class="cp-menu__panel">
+      <nav class="cp-menu__links">
+        <a href="index.html" class="cp-menu__link active" data-page-link>
+          <span class="cp-menu__link-text">Home</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="#projects" class="cp-menu__link">
+          <span class="cp-menu__link-text">Projects</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="#video" class="cp-menu__link">
+          <span class="cp-menu__link-text">Video</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="#process" class="cp-menu__link">
+          <span class="cp-menu__link-text">Process</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="#art" class="cp-menu__link">
+          <span class="cp-menu__link-text">Art</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="#services" class="cp-menu__link">
+          <span class="cp-menu__link-text">Services</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="#contact" class="cp-menu__link">
+          <span class="cp-menu__link-text">Contact</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+        <a href="blog.html" class="cp-menu__link" data-page-link>
+          <span class="cp-menu__link-text">Blog</span>
+          <span class="cp-menu__link-line"></span>
+        </a>
+      </nav>
+      <div class="cp-menu__bottom">
+        <div class="cp-menu__logo">
+          <img src="media/massoda-x-mark.svg" alt="Massoda" />
+        </div>
+        <div class="cp-menu__social">
+          <a href="https://www.instagram.com/fauxverse?igsh=bGNhYmxqZzVmeXVh" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://youtube.com/@fauxverse?si=PMcxbxpLp25F6SkK" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://x.com/Massoda24" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="cp-navbar" aria-label="Quick navigation">
+    <a href="../index.html" class="cp-navbar__back">&#x2190; Dev Portfolio</a>
+    <div class="cp-navbar__social">
+      <a href="https://www.instagram.com/fauxverse?igsh=bGNhYmxqZzVmeXVh" target="_blank" rel="noopener noreferrer" class="cp-navbar__social-link" aria-label="Fauxverse Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+    </div>
+  </nav>
+  <a href="index.html" class="cp-navbar__logo" data-page-link>
+    <img src="media/massoda-x-mark.svg" alt="Massoda" />
+  </a>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="cp-hero">
+    <div class="cp-hero-left"></div>
+    <div class="cp-hero-right">
+      <div class="cp-hero-about">
+        <div class="cp-artist-avatar" style="background-image:url('media/68bec31dfac4c3dd0477c426_IMG-20250908-WA0009_imresizer.jpg')"></div>
+        <span class="cp-quote-sign">"</span>
+        <h4 class="cp-about-heading">Hi, I'm Massoda — Visual Artist &amp; Animation Creator</h4>
+        <p class="cp-about-desc">I paint, draw, and build worlds — mostly in Procreate and Procreate Dreams, sometimes in DaVinci Resolve when a piece needs to move further than a loop. My work ranges from character portraits and logo animation to Disney-inspired adverts, and it's all rooted in the same habit: sketch first, let the idea prove itself, then push it to a finished piece.</p>
+        <p class="cp-about-desc">Fauxverse is my animation studio — home to original stories, characters, and a basketball universe unlike anything you've seen. It started as a place to keep the ideas I wasn't ready to let go of, and it's slowly becoming a real body of work: an animated series, a side-character story, and an illustrated book are all in motion right now.</p>
+        <p class="cp-about-desc">Outside of the personal universe-building, I take on commission work — illustration, logo design and animation, and short-form video — for anyone who wants their brand or story told with the same care.</p>
+        <a href="#art" class="cp-read-more">
+          About my art
+          <span class="cp-read-more__arrow"></span>
+        </a>
+      </div>
+      <div class="cp-mini-cards-area">
+        <div class="cp-mini-cards"></div>
+        <div class="cp-slider-nav">
+          <button class="cp-slider-nav__btn cp-slider-nav__btn--next" aria-label="Next slide">n<br>e<br>x<br>t</button>
+          <div class="cp-slider-nav__slash"></div>
+          <button class="cp-slider-nav__btn cp-slider-nav__btn--prev" aria-label="Previous slide">p<br>r<br>e<br>v</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cp-spacer"></div>
+
+  <!-- ============================================
+       CREATIVE SERVICES SECTION
+       ============================================ -->
+  <section id="services" class="cp-dates">
+    <div class="cp-dates__inner">
+
+      <div class="cp-dates__heading-col">
+        <div>
+          <span class="cp-dates__label">What I Offer</span>
+          <h2 class="cp-dates__h2">creative<br>services</h2>
+        </div>
+      </div>
+
+      <div class="cp-dates__content-col">
+
+        <div class="cp-date-row">
+          <div class="cp-date-row__info">
+            <div class="cp-date-row__date">Graphic Arts</div>
+            <div class="cp-date-row__time">Illustration</div>
+          </div>
+          <div class="cp-date-row__info">
+            <div class="cp-date-row__city">Procreate</div>
+            <div class="cp-date-row__venue">Character Design &amp; Digital Painting</div>
+          </div>
+          <a href="graphic-arts.html" class="cp-date-row__btn" data-page-link>Book a Call</a>
+        </div>
+
+        <div class="cp-date-row">
+          <div class="cp-date-row__info">
+            <div class="cp-date-row__date">Logo Animations</div>
+            <div class="cp-date-row__time">Motion Design</div>
+          </div>
+          <div class="cp-date-row__info">
+            <div class="cp-date-row__city">Brand Motion</div>
+            <div class="cp-date-row__venue">Idents, Bumpers &amp; Socials</div>
+          </div>
+          <a href="logo-animations.html" class="cp-date-row__btn" data-page-link>Book a Call</a>
+        </div>
+
+        <div class="cp-date-row">
+          <div class="cp-date-row__info">
+            <div class="cp-date-row__date">Logo Design</div>
+            <div class="cp-date-row__time">Branding</div>
+          </div>
+          <div class="cp-date-row__info">
+            <div class="cp-date-row__city">Identity</div>
+            <div class="cp-date-row__venue">Concept to Final Vector</div>
+          </div>
+          <a href="logo-design.html" class="cp-date-row__btn" data-page-link>Book a Call</a>
+        </div>
+
+        <div class="cp-date-row">
+          <div class="cp-date-row__info">
+            <div class="cp-date-row__date">Animation Adverts</div>
+            <div class="cp-date-row__time">Motion Design</div>
+          </div>
+          <div class="cp-date-row__info">
+            <div class="cp-date-row__city">Disney-Inspired</div>
+            <div class="cp-date-row__venue">Character-Driven Ads</div>
+          </div>
+          <a href="animation-adverts.html" class="cp-date-row__btn" data-page-link>Book a Call</a>
+        </div>
+
+        <div class="cp-date-row">
+          <div class="cp-date-row__info">
+            <div class="cp-date-row__date">Video Ads</div>
+            <div class="cp-date-row__time">Short-Form</div>
+          </div>
+          <div class="cp-date-row__info">
+            <div class="cp-date-row__city">Social-First</div>
+            <div class="cp-date-row__venue">Mobile-Optimised Cuts</div>
+          </div>
+          <a href="video-ads.html" class="cp-date-row__btn" data-page-link>Book a Call</a>
+        </div>
+
+        <div class="cp-date-row">
+          <div class="cp-date-row__info">
+            <div class="cp-date-row__date">Video Editing</div>
+            <div class="cp-date-row__time">Post-Production</div>
+          </div>
+          <div class="cp-date-row__info">
+            <div class="cp-date-row__city">DaVinci Resolve</div>
+            <div class="cp-date-row__venue">Colour Grading &amp; Motion</div>
+          </div>
+          <a href="video-editing.html" class="cp-date-row__btn" data-page-link>Book a Call</a>
+        </div>
+
+        <!-- Logo Animations — Fuse & Bpétale -->
+        <div class="cp-logo-anim-grid">
+
+          <div class="cp-logo-anim-card" data-reveal="up">
+            <div class="cp-logo-anim-card__media">
+              <video muted loop playsinline preload="none" autoplay
+                     poster="media/video/fuse-loop-poster.jpg">
+                <source src="media/video/fuse-loop.webm" type="video/webm" />
+                <source src="media/video/fuse-loop.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="cp-logo-anim-card__body">
+              <span class="cp-logo-anim-card__label">Logo Animation</span>
+              <h3 class="cp-logo-anim-card__title">Fuse</h3>
+              <p class="cp-logo-anim-card__text">A clean wordmark built to move — designed first as a static mark, then brought to life for use as a brand intro and social ident.</p>
+              <a href="fuse-logo-animation.html" class="cp-logo-anim-card__cta" data-page-link>See the process &#x2192;</a>
+            </div>
+          </div>
+
+          <div class="cp-logo-anim-card" data-reveal="up" data-reveal-delay="1">
+            <div class="cp-logo-anim-card__media">
+              <video muted loop playsinline preload="none" autoplay
+                     poster="media/video/bpetale-loop-poster.jpg">
+                <source src="media/video/bpetale-loop.webm" type="video/webm" />
+                <source src="media/video/bpetale-loop.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="cp-logo-anim-card__body">
+              <span class="cp-logo-anim-card__label">Logo Animation</span>
+              <h3 class="cp-logo-anim-card__title">Bp&eacute;tale</h3>
+              <p class="cp-logo-anim-card__text">The Bp&eacute;tale mark — a flame-winged bird brought in with a soft, confident motion built for real brand use.</p>
+              <a href="bpetale-logo-animation.html" class="cp-logo-anim-card__cta" data-page-link>See the process &#x2192;</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Contact block -->
+        <div id="contact" class="cp-dates-contacts">
+          <h2 class="cp-contacts-h2">reach me</h2>
+          <p class="cp-contacts-text">Interested in commissions, collaborations, or just want to say hello? Find me on any of the platforms below.</p>
+          <div class="cp-contacts-social">
+            <a href="https://www.instagram.com/fauxverse?igsh=bGNhYmxqZzVmeXVh" target="_blank" rel="noopener noreferrer" aria-label="Fauxverse Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://youtube.com/@fauxverse?si=PMcxbxpLp25F6SkK" target="_blank" rel="noopener noreferrer" aria-label="Fauxverse YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://x.com/Massoda24" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.261 5.635zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@hardyxxiv?_r=1&_t=ZS-95tG7nWnPpn" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       VIDEO SECTION
+       ============================================ -->
+  <section id="video" class="cp-video">
+    <div class="cp-video__left">
+      <div class="cp-video__heading">
+        <div class="cp-video__heading-row">
+          <span class="cp-video__char is-red">t</span>
+          <span class="cp-video__char">H</span>
+          <span class="cp-video__char">E</span>
+        </div>
+        <div class="cp-video__heading-row">
+          <span class="cp-video__char">N</span>
+          <span class="cp-video__char">E</span>
+          <span class="cp-video__char">W</span>
+        </div>
+        <div class="cp-video__heading-row">
+          <span class="cp-video__char">V</span>
+          <span class="cp-video__char">I</span>
+          <span class="cp-video__char">D</span>
+        </div>
+        <div class="cp-video__heading-row">
+          <span class="cp-video__char">E</span>
+          <span class="cp-video__char">O</span>
+          <span class="cp-video__char">!</span>
+        </div>
+      </div>
+      <p class="cp-video__desc">Step into Fauxverse. Watch my latest animation work, Procreate timelapse sessions, character design breakdowns, and motion pieces — all on YouTube.</p>
+      <a href="https://youtube.com/@fauxverse?si=PMcxbxpLp25F6SkK" target="_blank" rel="noopener noreferrer" class="cp-read-more cp-video__desc">
+        Watch all videos
+        <span class="cp-read-more__arrow"></span>
+      </a>
+    </div>
+    <div class="cp-video__right">
+      <div class="cp-video__display">
+        <video class="cp-video__display-video" muted loop playsinline preload="none" autoplay
+               poster="media/video/timelapse-motorcyclist-poster.jpg">
+          <source src="media/video/timelapse-motorcyclist.webm" type="video/webm" />
+          <source src="media/video/timelapse-motorcyclist.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video modal (kept for future YouTube embeds) -->
+  <div class="cp-video-modal" role="dialog" aria-modal="true" aria-label="Video player">
+    <div class="cp-video-modal__inner">
+      <button class="cp-video-modal__close" aria-label="Close video">&times;</button>
+      <iframe src="" allowfullscreen allow="autoplay; fullscreen" title="Video"></iframe>
+    </div>
+  </div>
+
+  <!-- ============================================
+       PROCESS & SKETCHBOOK SECTION
+       ============================================ -->
+  <section id="process" class="cp-process">
+    <div class="cp-process__inner">
+
+      <div class="cp-process__header" data-reveal="up">
+        <span class="cp-process__label">Behind The Work</span>
+        <h2 class="cp-process__h2">process &amp;<br>sketchbook</h2>
+      </div>
+
+      <!-- Timelapses -->
+      <div class="cp-process__group">
+        <h3 class="cp-process__group-title">Timelapses</h3>
+        <div class="cp-process__grid">
+
+          <div class="cp-timelapse-card" data-reveal="up">
+            <video class="cp-timelapse-card__video" muted loop playsinline preload="none"
+                   poster="media/video/timelapse-portrait-1-poster.jpg"
+                   data-src-mp4="media/video/timelapse-portrait-1.mp4"
+                   data-src-webm="media/video/timelapse-portrait-1.webm"></video>
+            <div class="cp-timelapse-card__label">Portrait Study</div>
+          </div>
+
+          <div class="cp-timelapse-card" data-reveal="up" data-reveal-delay="1">
+            <video class="cp-timelapse-card__video" muted loop playsinline preload="none"
+                   poster="media/video/timelapse-portrait-2-poster.jpg"
+                   data-src-mp4="media/video/timelapse-portrait-2.mp4"
+                   data-src-webm="media/video/timelapse-portrait-2.webm"></video>
+            <div class="cp-timelapse-card__label">Headwrap Portrait</div>
+          </div>
+
+          <div class="cp-timelapse-card" data-reveal="up" data-reveal-delay="2">
+            <video class="cp-timelapse-card__video" muted loop playsinline preload="none"
+                   poster="media/video/timelapse-motorcyclist-poster.jpg"
+                   data-src-mp4="media/video/timelapse-motorcyclist.mp4"
+                   data-src-webm="media/video/timelapse-motorcyclist.webm"></video>
+            <div class="cp-timelapse-card__label">Motorcyclist</div>
+          </div>
+
+          <a href="#video" class="cp-timelapse-card cp-timelapse-card--soon" data-reveal="up" data-reveal-delay="3">
+            <div class="cp-timelapse-card__soon-inner">
+              <span class="cp-timelapse-card__soon-tag">In Production</span>
+              <span class="cp-timelapse-card__soon-title">Motion &amp; Video Reel</span>
+              <span class="cp-timelapse-card__soon-desc">Edited in DaVinci Resolve &amp; Premiere Pro — coming soon</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Sketchbook -->
+      <div class="cp-process__group">
+        <h3 class="cp-process__group-title">Sketchbook — In Progress</h3>
+        <div class="cp-process__grid">
+
+          <a href="#projects" class="cp-timelapse-card" data-reveal="up">
+            <img class="cp-timelapse-card__img" src="media/gallery/jack-buddy-sketch.jpg" alt="Jack Buddy concept sketch" loading="lazy" />
+            <div class="cp-timelapse-card__label">Jack Buddy — Concept Sketch</div>
+          </a>
+
+          <div class="cp-timelapse-card" data-reveal="up" data-reveal-delay="1">
+            <video class="cp-timelapse-card__video" muted loop playsinline preload="none"
+                   poster="media/video/sketch-loop-hand-poster.jpg"
+                   data-src-mp4="media/video/sketch-loop-hand.mp4"
+                   data-src-webm="media/video/sketch-loop-hand.webm"></video>
+            <div class="cp-timelapse-card__label">Motion Study — Hand</div>
+          </div>
+
+          <div class="cp-timelapse-card" data-reveal="up" data-reveal-delay="2">
+            <video class="cp-timelapse-card__video" muted loop playsinline preload="none"
+                   poster="media/video/sketch-loop-writer-poster.jpg"
+                   data-src-mp4="media/video/sketch-loop-writer.mp4"
+                   data-src-webm="media/video/sketch-loop-writer.webm"></video>
+            <div class="cp-timelapse-card__label">Character Loop — Writer</div>
+          </div>
+
+          <div class="cp-timelapse-card cp-timelapse-card--soon" data-reveal="up" data-reveal-delay="3">
+            <div class="cp-timelapse-card__soon-inner">
+              <span class="cp-timelapse-card__soon-tag">Coming Soon</span>
+              <span class="cp-timelapse-card__soon-title">Traditional Art</span>
+              <span class="cp-timelapse-card__soon-desc">Acrylic paintings &amp; drawings — on the way</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       ART & ILLUSTRATION SECTION
+       ============================================ -->
+  <section id="art" class="cp-music">
+    <div class="cp-music__inner">
+
+      <!-- Left: Creative services + Instagram grid -->
+      <div>
+        <div class="cp-art-services">
+          <div class="cp-art-services__item">
+            <span class="cp-art-services__dot"></span>
+            Procreate Illustrations &amp; Character Design
+          </div>
+          <div class="cp-art-services__item">
+            <span class="cp-art-services__dot"></span>
+            Logo Animation &amp; Motion Design
+          </div>
+          <div class="cp-art-services__item">
+            <span class="cp-art-services__dot"></span>
+            Disney-Style Animated Adverts
+          </div>
+          <div class="cp-art-services__item">
+            <span class="cp-art-services__dot"></span>
+            Procreate Dreams — Full Animation
+          </div>
+          <div class="cp-art-services__item">
+            <span class="cp-art-services__dot"></span>
+            Paintings, Drawings &amp; Fine Art
+          </div>
+        </div>
+
+        <a href="https://www.instagram.com/fauxverse?igsh=bGNhYmxqZzVmeXVh" target="_blank" rel="noopener noreferrer" class="cp-insta-grid">
+          <div class="cp-insta-grid__left">
+            <div class="cp-insta-photo" style="background-image:url('media/gallery/illustration-1.jpg')"></div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;">
+              <div class="cp-insta-photo" style="background-image:url('media/gallery/illustration-2.jpg')"></div>
+              <div class="cp-insta-photo" style="background-image:url('media/gallery/illustration-6.jpg')"></div>
+            </div>
+          </div>
+          <div style="display:grid;gap:0.4rem;">
+            <div class="cp-insta-photo" style="background-image:url('media/gallery/illustration-3.jpg')"></div>
+            <div class="cp-insta-photo" style="background-image:url('media/gallery/illustration-8.jpg')"></div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Right: About text -->
+      <div class="cp-music__about">
+        <h2 class="cp-music__heading">
+          <span class="cp-music__heading-inner">about<br>my art</span>
+        </h2>
+        <p class="cp-music__text">I'm a self-taught visual artist and animation creator based in the digital space. My work lives at the intersection of character design, storytelling, and motion — built frame by frame in Procreate and Procreate Dreams.</p>
+        <p class="cp-music__text">From detailed illustrations and logo animations to full Disney-inspired animated adverts, every piece begins with a feeling and ends with a world. My animation studio, Fauxverse, is the umbrella for all my original stories and characters.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES SECTION
+       ============================================ -->
+  <section id="projects" class="cp-services">
+    <div class="cp-services__inner">
+
+      <div class="cp-services__header">
+        <span class="cp-services__label">Works</span>
+        <h2 class="cp-services__h2">my creative<br>projects</h2>
+      </div>
+
+      <div class="cp-services__grid">
+
+        <div class="cp-service-card">
+          <span class="cp-service-card__num">01</span>
+          <h3 class="cp-service-card__title">Fauxverse</h3>
+          <p class="cp-service-card__desc">Animation studio &amp; original IP — a basketball universe unlike anything you've seen. In development.</p>
+        </div>
+
+        <div class="cp-service-card">
+          <span class="cp-service-card__num">02</span>
+          <h3 class="cp-service-card__title">Jack Buddy</h3>
+          <p class="cp-service-card__desc">An original animated series, currently in production.</p>
+        </div>
+
+        <div class="cp-service-card">
+          <span class="cp-service-card__num">03</span>
+          <h3 class="cp-service-card__title">NPC (Side Character)</h3>
+          <p class="cp-service-card__desc">An original animated story, coming soon.</p>
+        </div>
+
+        <div class="cp-service-card">
+          <span class="cp-service-card__num">04</span>
+          <h3 class="cp-service-card__title">I See Differently</h3>
+          <p class="cp-service-card__desc">An illustrated book, currently being written.</p>
+        </div>
+
+        <div class="cp-service-card">
+          <span class="cp-service-card__num">05</span>
+          <h3 class="cp-service-card__title">Procreate Art</h3>
+          <p class="cp-service-card__desc">Ongoing character design, illustration &amp; logo animation practice.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       BE IN TOUCH SECTION
+       ============================================ -->
+  <section class="cp-be-in-touch">
+    <h2 class="cp-be-in-touch__heading">
+      <span class="cp-be-in-touch__heading-inner">Let's be<br>in touch</span>
+    </h2>
+    <div class="cp-be-in-touch__social">
+      <a href="https://www.instagram.com/fauxverse?igsh=bGNhYmxqZzVmeXVh" target="_blank" rel="noopener noreferrer" class="cp-be-in-touch__link" aria-label="Fauxverse Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="https://youtube.com/@fauxverse?si=PMcxbxpLp25F6SkK" target="_blank" rel="noopener noreferrer" class="cp-be-in-touch__link" aria-label="Fauxverse YouTube">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+      <a href="https://x.com/Massoda24" target="_blank" rel="noopener noreferrer" class="cp-be-in-touch__link" aria-label="Twitter / X">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.261 5.635zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@hardyxxiv?_r=1&_t=ZS-95tG7nWnPpn" target="_blank" rel="noopener noreferrer" class="cp-be-in-touch__link" aria-label="TikTok">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       BLOG SECTION
+       ============================================ -->
+  <section id="blog" class="cp-blog">
+
+    <a href="blog-inspiration-for-art-what-to-do-with-love.html" class="cp-blog-article" data-page-link>
+      <div class="cp-blog-article__bg" style="background-image:url('media/68408731f56911f9bb595cb5_blog-first-post.jpg')"></div>
+      <div class="cp-blog-article__inner">
+        <div class="cp-blog-article__text">
+          <div class="cp-blog-article__title-wrap">
+            <span class="cp-blog-article__title">Artists Who Inspire My Work: A Look at SamDoesArt</span>
+          </div>
+          <p class="cp-blog-article__desc">The artists you follow shape the artist you become. Here's why SamDoesArt's approach to character design and storytelling changed the way I create.</p>
+        </div>
+        <div class="cp-blog-article__arrow">
+          <span>Read</span>
+          <span class="cp-blog-article__arrow-line"></span>
+        </div>
+      </div>
+    </a>
+
+    <a href="blog-how-to-animate-a-logo-in-procreate-dreams.html" class="cp-blog-article" data-page-link>
+      <div class="cp-blog-article__bg" style="background-image:url('media/video/fuse-loop-poster.jpg')"></div>
+      <div class="cp-blog-article__inner">
+        <div class="cp-blog-article__text">
+          <div class="cp-blog-article__title-wrap">
+            <span class="cp-blog-article__title">How to Animate a Logo in Procreate Dreams: A Beginner-Friendly Process</span>
+          </div>
+          <p class="cp-blog-article__desc">Logo animation looks intimidating from the outside. Here's the actual process I use, from a static mark to a polished, looping brand animation.</p>
+        </div>
+        <div class="cp-blog-article__arrow">
+          <span>Read</span>
+          <span class="cp-blog-article__arrow-line"></span>
+        </div>
+      </div>
+    </a>
+
+    <a href="blog-procreate-vs-procreate-dreams.html" class="cp-blog-article" data-page-link>
+      <div class="cp-blog-article__bg" style="background-image:url('media/gallery/illustration-3.jpg')"></div>
+      <div class="cp-blog-article__inner">
+        <div class="cp-blog-article__text">
+          <div class="cp-blog-article__title-wrap">
+            <span class="cp-blog-article__title">Procreate vs Procreate Dreams: What Each One Is Actually For</span>
+          </div>
+          <p class="cp-blog-article__desc">They're not competing apps — they do different jobs. A practical breakdown of when to reach for each one.</p>
+        </div>
+        <div class="cp-blog-article__arrow">
+          <span>Read</span>
+          <span class="cp-blog-article__arrow-line"></span>
+        </div>
+      </div>
+    </a>
+
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="cp-footer">
+    <div class="cp-newsletter">
+      <div class="cp-newsletter__label">Get occasional updates on new work</div>
+      <form class="cp-newsletter__form" novalidate>
+        <input type="email" class="cp-newsletter__input" placeholder="Your email" required autocomplete="email" />
+        <button type="submit" class="cp-newsletter__btn" aria-label="Subscribe">&#8594;</button>
+      </form>
+    </div>
+
+    <a href="index.html" class="cp-footer__logo" data-page-link>
+      <img src="media/massoda-x-mark.svg" alt="Massoda" />
+    </a>
+    <p class="cp-footer__copy">&copy; 2025 Massoda. All rights reserved.</p>
+  </footer>
+
+  <script src="creative.js"></script>
+</body>
+</html>
