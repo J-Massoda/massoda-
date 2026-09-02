@@ -86,29 +86,390 @@
   </div>
 
 
-  <div class="container">
-    <div class="blog-post__hero">
-      <span class="blog-post__tag">Industry Trends</span>
-      <h1 class="blog-post__title">The Great Cloud Storage Consolidation: How a Handful of Companies Control the Internet's Data</h1>
-      <p class="blog-post__meta">By Massoda</p>
-    </div>
-    <div class="blog-post__body">
-      <p>As of Q1 2026, AWS holds roughly 28-30% of global cloud infrastructure spending, Azure sits around 21-25%, and Google Cloud holds 13-14% — together, close to two-thirds of a market now worth over $500 billion annually and heading toward $1 trillion. That concentration is worth pausing on, because it has real, practical consequences for anyone building on top of it.</p>
+<div class="container">
+  <div class="blog-post__hero">
+    <span class="blog-post__tag">Industry Trends</span>
 
-      <h2>How We Got Here</h2>
-      <p>Cloud infrastructure has enormous fixed costs — building data centers, laying fiber, negotiating power contracts at scale — that create a natural moat for whoever got there first and kept reinvesting. AWS's decade-plus head start let it build a depth of services and ecosystem that's genuinely hard to replicate. Azure's growth has come largely from bundling cloud with the existing Microsoft enterprise relationship — companies already paying for Microsoft 365 find Azure the path of least resistance rather than a neutral choice made on technical merit alone. Google Cloud has carved out its fastest growth (63% year-over-year) from AI and data-heavy workloads where its technical reputation is strongest.</p>
+    <h1 class="blog-post__title">
+      The Great Cloud Consolidation: How Three Companies Came to Dominate Cloud Infrastructure
+    </h1>
 
-      <h2>What Concentration Means in Practice</h2>
-      <ul>
-        <li><strong>Pricing power sits with a small number of vendors.</strong> When switching costs are high (data egress fees, deep API integration, proprietary managed services), providers have less competitive pressure to keep prices favorable over time.</li>
-        <li><strong>Vendor lock-in is a real, ongoing risk to architect around.</strong> The more deeply you integrate with provider-specific managed services, the more expensive and technically painful a future migration becomes — this is a genuine trade-off against the convenience those services offer, not just theoretical.</li>
-        <li><strong>Outages have outsized blast radius.</strong> When a large fraction of the internet's infrastructure sits on a handful of providers, a major outage at any one of them takes down a disproportionate share of unrelated services simultaneously — this has already happened publicly more than once.</li>
-      </ul>
-
-      <h2>The Practical Developer Response</h2>
-      <p>This isn't an argument against using major cloud providers — the reliability and service depth are real and hard to replicate independently. It's an argument for architecting deliberately: understanding which parts of your system are provider-agnostic versus provider-locked, keeping an honest account of switching costs as you adopt convenient managed services, and not assuming the pricing or terms you see today are permanent. Multi-cloud strategies exist specifically to hedge this risk, though they come with their own real complexity cost — worth knowing the trade-off exists even if you don't adopt it for a given project.</p>
-    </div>
+    <p class="blog-post__meta">By Massoda</p>
   </div>
+
+  <div class="blog-post__body">
+
+    <p>
+      The modern internet may feel decentralized, but much of the infrastructure underneath it
+      is increasingly concentrated in the hands of a few companies.
+    </p>
+
+    <p>
+      As of Q2 2026, Amazon Web Services held approximately <strong>28%</strong> of the global
+      cloud infrastructure services market, Microsoft held <strong>20%</strong>, and Google held
+      <strong>15%</strong>. Together, the three companies accounted for roughly
+      <strong>63% of worldwide spending</strong>.
+    </p>
+
+    <p>
+      And the market itself is expanding rapidly. Enterprise spending on cloud infrastructure
+      services reached approximately <strong>$143 billion in Q2 2026 alone</strong>, up 43%
+      from the same period a year earlier. According to Synergy Research Group, the market has
+      doubled in size over the previous 11 quarters, with generative AI becoming a major driver
+      of that acceleration.
+    </p>
+
+    <p>
+      That concentration is worth paying attention to—not because AWS, Microsoft Azure, or
+      Google Cloud are inherently bad choices, but because the structure of the market has
+      practical consequences for almost every company building modern digital products.
+    </p>
+
+
+    <h2>How We Got Here</h2>
+
+    <p>
+      Cloud infrastructure is an extraordinarily capital-intensive business.
+    </p>
+
+    <p>
+      Competing at hyperscale requires more than building good software. Providers must
+      continuously invest in data centers, networking infrastructure, processors, storage
+      systems, cybersecurity, global fiber connectivity, energy capacity, engineering talent,
+      and increasingly, enormous clusters of AI accelerators.
+    </p>
+
+    <p>
+      Those requirements naturally favor companies capable of investing tens of billions of
+      dollars over long periods.
+    </p>
+
+    <p>
+      AWS was one of the earliest companies to turn infrastructure into an on-demand service
+      available to developers at global scale. Amazon launched S3 in 2006, followed by EC2
+      later that year, allowing developers to access storage and computing capacity without
+      purchasing and operating physical servers themselves.
+    </p>
+
+    <p>
+      Microsoft announced Windows Azure in 2008, bringing its enterprise software and
+      data-center experience into the emerging cloud market. Google also launched App Engine
+      in 2008, allowing developers to run applications directly on Google's infrastructure.
+    </p>
+
+    <p>
+      AWS's early-mover advantage helped it establish a deep ecosystem of services, partners,
+      developers, certifications, and enterprise customers.
+    </p>
+
+    <p>
+      Microsoft followed a different path. For organizations already heavily invested in
+      Microsoft 365, Windows Server, Active Directory, SQL Server, Dynamics, and Microsoft's
+      broader enterprise ecosystem, Azure can provide a comparatively low-friction path into
+      cloud infrastructure.
+    </p>
+
+    <p>
+      Google Cloud has increasingly differentiated itself around data infrastructure,
+      artificial intelligence, machine learning, and high-performance computing.
+    </p>
+
+    <p>
+      That strategy is producing significant growth. In Q2 2026, Google Cloud revenue increased
+      <strong>82% year-over-year to $24.8 billion</strong>, with Alphabet citing growth in
+      enterprise AI solutions, AI infrastructure, and core Google Cloud Platform services.
+      Microsoft's Azure and other cloud services revenue grew
+      <strong>43% year-over-year</strong> during the quarter ending June 30, 2026.
+    </p>
+
+    <p>
+      The result is a market in which AWS remains the largest provider while Microsoft and
+      Google continue expanding rapidly behind it.
+    </p>
+
+
+    <h2>What Concentration Means in Practice</h2>
+
+    <p>
+      Market concentration is not automatically a problem. Large cloud providers can deliver
+      levels of reliability, geographic reach, security engineering, infrastructure automation,
+      and service depth that would be extremely difficult for most organizations to reproduce
+      independently.
+    </p>
+
+    <p>
+      But concentration creates trade-offs.
+    </p>
+
+    <ul>
+      <li>
+        <strong>Switching costs can reduce customer flexibility.</strong>
+        Moving an application from one cloud provider to another is rarely as simple as copying
+        files between servers. Modern applications increasingly depend on managed databases,
+        serverless runtimes, identity platforms, event systems, analytics tools, proprietary
+        APIs, AI services, and cloud-specific networking architectures.
+      </li>
+
+      <li>
+        <strong>Convenience can come at the cost of portability.</strong>
+        Managed cloud services are attractive precisely because they remove work. A proprietary
+        database, serverless platform, AI API, message queue, or analytics service can allow a
+        development team to build much faster, but deeper integration can also increase the
+        technical and financial cost of moving elsewhere later.
+      </li>
+
+      <li>
+        <strong>Outages can have an outsized blast radius.</strong>
+        When thousands of otherwise unrelated applications depend on the same cloud provider,
+        region, database service, networking layer, or identity system, a single infrastructure
+        failure can affect a surprisingly large part of the internet at once.
+      </li>
+    </ul>
+
+
+    <h2>Vendor Lock-In Is More Than a Technical Problem</h2>
+
+    <p>
+      Vendor lock-in is often discussed as an engineering issue, but it can also become a
+      strategic business problem.
+    </p>
+
+    <p>
+      Every provider-specific dependency can make an application easier to build today while
+      making it harder to move tomorrow. Data-transfer charges, proprietary APIs, architecture
+      decisions, specialized databases, identity systems, and deeply integrated managed
+      services can all contribute to switching costs.
+    </p>
+
+    <p>
+      Regulators have increasingly taken these barriers seriously. The UK's Competition and
+      Markets Authority has identified data-egress fees and technical interoperability barriers
+      as factors that can restrict customers' ability to switch cloud providers or operate
+      effectively across multiple clouds.
+    </p>
+
+    <p>
+      Some of these practices are beginning to change. Under the European Union's Data Act,
+      qualifying cloud-switching charges, including relevant data-egress charges associated
+      with switching, are scheduled to be removed from
+      <strong>January 12, 2027</strong>.
+    </p>
+
+    <p>
+      But removing a transfer fee does not automatically make an application portable. A system
+      built around dozens of provider-specific services can still require substantial redesign
+      before it can operate somewhere else.
+    </p>
+
+
+    <h2>The AI Boom May Increase Concentration Further</h2>
+
+    <p>
+      Artificial intelligence is adding another dimension to cloud consolidation.
+    </p>
+
+    <p>
+      Training and operating advanced AI systems requires enormous computing capacity,
+      specialized accelerators, high-speed networking, large-scale storage, sophisticated
+      orchestration software, and significant access to electricity.
+    </p>
+
+    <p>
+      Those requirements favor organizations that already operate infrastructure at hyperscale.
+    </p>
+
+    <p>
+      Generative AI has become one of the primary drivers behind the recent acceleration in
+      cloud infrastructure spending. That creates an important feedback loop: more AI demand
+      drives more cloud investment, and greater cloud investment allows the largest providers
+      to build even larger data centers, AI clusters, and specialized services.
+    </p>
+
+    <p>
+      Those capabilities then attract additional developers, enterprises, AI companies, and
+      workloads back onto their platforms.
+    </p>
+
+    <p>
+      Cloud infrastructure is therefore becoming more than the foundation of websites and
+      enterprise applications. It is increasingly becoming part of the foundation on which the
+      AI economy itself is being built.
+    </p>
+
+
+    <h2>The Practical Developer Response</h2>
+
+    <p>
+      None of this is an argument against using AWS, Azure, or Google Cloud.
+    </p>
+
+    <p>
+      For many organizations, using one of the major providers will remain the most practical
+      decision. Their scale provides access to infrastructure, security capabilities,
+      geographic distribution, managed services, AI platforms, and engineering resources that
+      would be extraordinarily expensive to reproduce independently.
+    </p>
+
+    <p>
+      The better lesson is to understand <strong>where your dependencies are being created</strong>.
+    </p>
+
+    <p>
+      Development teams should know which components of their architecture are relatively
+      portable and which are deeply tied to a specific provider. They should understand the
+      cost of moving critical data and consider what would happen if an important managed
+      service changed its pricing, availability, licensing terms, or technical direction.
+    </p>
+
+    <p>
+      The goal is not necessarily to avoid provider-specific services. In many cases, the speed,
+      reliability, and operational simplicity they provide are worth the trade-off.
+    </p>
+
+    <p>
+      The important thing is to make that trade-off deliberately rather than discovering it
+      years later when migration has become expensive.
+    </p>
+
+
+    <h2>What About Multi-Cloud?</h2>
+
+    <p>
+      Reducing dependence on a single provider is one reason organizations adopt multi-cloud
+      strategies.
+    </p>
+
+    <p>
+      But multi-cloud is not free.
+    </p>
+
+    <p>
+      Operating across several providers can increase networking complexity, security
+      requirements, observability challenges, engineering overhead, data synchronization
+      problems, and the number of platforms and skills a technical team must maintain.
+    </p>
+
+    <p>
+      For many organizations, the best strategy may not be to run every application
+      simultaneously across AWS, Azure, and Google Cloud.
+    </p>
+
+    <p>
+      A more practical approach may simply be to understand the cost of dependency before
+      creating it, use portable technologies where portability matters, and accept deeper
+      provider integration where the business value clearly justifies it.
+    </p>
+
+
+    <h2>The Bigger Picture</h2>
+
+    <p>
+      Cloud computing originally promised to remove infrastructure as a constraint.
+    </p>
+
+    <p>
+      Instead of purchasing servers, companies could rent computing power when they needed it.
+      Startups gained access to infrastructure that previously required enormous amounts of
+      capital. Developers could launch products globally without building their own data
+      centers.
+    </p>
+
+    <p>
+      That transformation has been overwhelmingly valuable.
+    </p>
+
+    <p>
+      But it has also produced a new layer of dependency.
+    </p>
+
+    <p>
+      Much of the digital economy now runs on infrastructure owned and operated by a remarkably
+      small group of companies. As cloud infrastructure expands further—and as artificial
+      intelligence increases global demand for computing capacity—the strategic question for
+      businesses will no longer be simply:
+    </p>
+
+    <p>
+      <strong>Which cloud provider should we use?</strong>
+    </p>
+
+    <p>
+      It will increasingly become:
+    </p>
+
+    <p>
+      <strong>
+        How much of our technology stack are we comfortable allowing any one provider
+        to control?
+      </strong>
+    </p>
+
+    <p>
+      That is a question worth answering before switching becomes difficult.
+    </p>
+
+
+    <h2>References</h2>
+
+    <ol>
+      <li>
+        <strong>Synergy Research Group.</strong>
+        “Q2 Cloud Market Passes $143 Billion; Highest Growth Rate in Eight Years.”
+        July 2026.
+      </li>
+
+      <li>
+        <strong>Amazon Web Services.</strong>
+        AWS historical materials covering the launch of Amazon S3 and Amazon EC2 in 2006.
+      </li>
+
+      <li>
+        <strong>Microsoft.</strong>
+        “Microsoft Unveils Windows Azure at Professional Developers Conference.”
+        October 2008.
+      </li>
+
+      <li>
+        <strong>Google Cloud.</strong>
+        “Introducing Google App Engine.”
+        April 2008.
+      </li>
+
+      <li>
+        <strong>Alphabet Inc.</strong>
+        Q2 2026 Financial Results.
+        Google Cloud revenue increased 82% year-over-year to $24.8 billion.
+      </li>
+
+      <li>
+        <strong>Microsoft.</strong>
+        Fiscal Year 2026 Fourth Quarter Results.
+        Azure and other cloud services revenue increased 43% year-over-year.
+      </li>
+
+      <li>
+        <strong>UK Competition and Markets Authority.</strong>
+        Cloud services and business software market findings and actions, 2026.
+      </li>
+
+      <li>
+        <strong>European Commission.</strong>
+        EU Data Act guidance covering cloud switching and switching charges.
+      </li>
+
+      <li>
+        <strong>Reuters.</strong>
+        Coverage of the October 2025 AWS cloud outage and its impact across multiple
+        online services.
+      </li>
+    </ol>
+
+    <p>
+      <em>Market data and company growth figures are current through Q2 2026.</em>
+    </p>
+
+  </div>
+</div>
 
 <!-- FOOTER -->
   <footer class="footer">
