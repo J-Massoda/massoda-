@@ -10,11 +10,11 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="CI/CD Pipelines in 2026: What's Changed With AI-Assisted DevOps &mdash; Massoda" />
   <meta property="og:description" content="AI-assisted code review, auto-generated tests, and deployment automation are changing CI/CD pipelines in 2026. Here's what's actually different in practice." />
-  <meta property="og:image" content="../media/og-cover.jpg" />
+  <meta property="og:image" content="https://massoda.me/media/ai-assisted-ci-cd-featured.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="CI/CD Pipelines in 2026: What's Changed With AI-Assisted DevOps &mdash; Massoda" />
   <meta name="twitter:description" content="AI-assisted code review, auto-generated tests, and deployment automation are changing CI/CD pipelines in 2026. Here's what's actually different in practice." />
-  <meta name="twitter:image" content="../media/og-cover.jpg" />
+  <meta name="twitter:image" content="https://massoda.me/media/ai-assisted-ci-cd-featured.png" />
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +26,8 @@
   "@type": "BlogPosting",
   "headline": "CI/CD Pipelines in 2026: What's Changed With AI-Assisted DevOps",
   "description": "AI-assisted code review, auto-generated tests, and deployment automation are changing CI/CD pipelines in 2026. Here's what's actually different in practice.",
-  "image": "https://massoda.me/media/og-cover.jpg",
+  "image": "https://massoda.me/media/ai-assisted-ci-cd-featured.png",
+  
   "author": {
     "@type": "Person",
     "name": "Emilien Massoda",
@@ -98,20 +99,74 @@
 
       <p>This article explains the concrete pipeline changes teams should adopt now to shorten feedback loops and reduce deployment risk.</p>
 
+      <figure class="blog-post__visual blog-post__visual--featured">
+        <img src="../media/ai-assisted-ci-cd-featured.png" width="1672" height="941" alt="AI-assisted CI/CD featured infographic" loading="eager" fetchpriority="high" decoding="async" />
+      </figure>
+
       <h2>AI-Assisted Code Review in the Pipeline</h2>
       <p>Automated code review tools that run as a pipeline step — flagging potential bugs, security issues, and style violations before a human reviewer even looks at a pull request — have moved from novelty to standard practice at a growing share of engineering organizations. This doesn't replace human review; it front-loads the mechanical, easily-automatable parts of review so human reviewers spend their attention on architecture and logic rather than catching a missing null check.</p>
+
+      <img
+        src="../media/where-ai-assists-ci-cd.png"
+        alt="Where AI assists in the CI/CD pipeline"
+        class="blog-post__visual"
+        width="1672"
+        height="941"
+        loading="lazy"
+        decoding="async"
+      />
 
       <h2>Auto-Generated Test Coverage</h2>
       <p>AI-assisted test generation — producing unit tests for new code as part of the pipeline, or flagging under-tested code paths — has become common enough that "the AI writes obvious tests, the human writes the tests for edge cases and business logic" is a fairly standard division of labor now. The caveat that matters: generated tests are only as good as the review they receive; auto-generated tests that simply assert current behavior (rather than *correct* behavior) can quietly lock in bugs rather than catch them.</p>
 
+      <img
+        src="../media/ai-human-code-review-gate.png"
+        alt="Diagram of AI-human code review gate in pipelines"
+        class="blog-post__visual"
+        width="1672"
+        height="941"
+        loading="lazy"
+        decoding="async"
+      />
+
       <h2>Smarter Deployment Automation</h2>
       <p>Progressive delivery patterns — canary deployments, automated rollback triggered by anomaly detection in production metrics rather than manual monitoring — have become more accessible as tooling around them has matured. The practical shift is less "AI decides to deploy" and more "automated systems catch a regression and roll back faster than a human would notice it," which meaningfully reduces the blast radius of bad deployments.</p>
+
+      <img
+        src="../media/ai-generated-test-review-loop.png"
+        alt="Loop showing auto-generated tests feeding into review"
+        class="blog-post__visual"
+        width="1672"
+        height="941"
+        loading="lazy"
+        decoding="async"
+      />
+
+      <img
+        src="../media/progressive-delivery-safety-gates.png"
+        alt="Progressive delivery safety gates diagram"
+        class="blog-post__visual"
+        width="1672"
+        height="941"
+        loading="lazy"
+        decoding="async"
+      />
 
       <h2>What Hasn't Changed</h2>
       <p>The fundamentals of good CI/CD practice are unchanged: fast feedback loops, reliable and reproducible builds, meaningful test coverage (not just high percentage numbers), and pipelines that engineers actually trust enough not to route around. AI-assisted tooling accelerates and augments good practice — it doesn't substitute for a pipeline that was poorly designed to begin with. A slow, flaky pipeline with AI-generated tests bolted onto it is still a slow, flaky pipeline.</p>
 
       <h2>The Skill That Matters Now</h2>
       <p>The differentiating skill isn't knowing that these tools exist — adoption is already broad. It's knowing how to configure and tune them so they add genuine signal rather than noise: setting review tools to flag real issues without drowning reviewers in false positives, writing test generation prompts or configs that target actual risk areas, and setting rollback thresholds sensitive enough to catch real regressions without triggering on normal variance. That configuration work is where real DevOps judgment still lives.</p>
+
+      <img
+        src="../media/ci-cd-learning-feedback-loop.png"
+        alt="CI/CD learning feedback loop"
+        class="blog-post__visual"
+        width="1672"
+        height="941"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
   </div>
 

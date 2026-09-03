@@ -10,11 +10,11 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Serverless vs Containers in 2026: Choosing the Right Architecture for Your Next Project &mdash; Massoda" />
   <meta property="og:description" content="A practical, opinionated framework for choosing between serverless and containerized architecture for your next project — not just a feature comparison." />
-  <meta property="og:image" content="../media/og-cover.jpg" />
+  <meta property="og:image" content="https://massoda.me/media/serverless-vs-containers-featured.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Serverless vs Containers in 2026: Choosing the Right Architecture for Your Next Project &mdash; Massoda" />
   <meta name="twitter:description" content="A practical, opinionated framework for choosing between serverless and containerized architecture for your next project — not just a feature comparison." />
-  <meta name="twitter:image" content="../media/og-cover.jpg" />
+  <meta name="twitter:image" content="https://massoda.me/media/serverless-vs-containers-featured.png" />
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +26,7 @@
   "@type": "BlogPosting",
   "headline": "Serverless vs Containers in 2026: Choosing the Right Architecture for Your Next Project",
   "description": "A practical, opinionated framework for choosing between serverless and containerized architecture for your next project \u2014 not just a feature comparison.",
-  "image": "https://massoda.me/media/og-cover.jpg",
+  "image": "https://massoda.me/media/serverless-vs-containers-featured.png",
   "author": {
     "@type": "Person",
     "name": "Emilien Massoda",
@@ -98,12 +98,26 @@
 
       <p>Use the framework below to match your architecture choice to real-world traffic, cost, and operational constraints.</p>
 
+      <figure class="blog-post__visual blog-post__visual--featured">
+        <img src="../media/serverless-vs-containers-featured.png" width="1672" height="941" alt="Serverless vs containers featured infographic" loading="eager" fetchpriority="high" decoding="async" />
+      </figure>
+
       <h2>Choose Serverless When:</h2>
       <ul>
         <li><strong>Traffic is spiky or unpredictable.</strong> Serverless (AWS Lambda, Azure Functions, Google Cloud Functions) scales to zero and back up automatically — you pay for actual invocations, not idle capacity. This is ideal for workloads with irregular traffic patterns.</li>
         <li><strong>You want to minimize operational overhead.</strong> No servers to patch, no cluster to manage, no capacity planning. For small teams or side projects, this is a genuine time-saver, not just a marketing line.</li>
         <li><strong>Individual tasks are short-lived.</strong> API endpoints, event-driven processing, scheduled jobs — serverless fits naturally where execution time is measured in seconds, not hours.</li>
       </ul>
+
+      <img
+        src="../media/operational-responsibility-comparison.png"
+        alt="Operational responsibility comparison between serverless and containers"
+        class="blog-post__visual"
+        width="1672"
+        height="941"
+        loading="lazy"
+        decoding="async"
+      />
 
       <h2>Choose Containers When:</h2>
       <ul>
@@ -113,11 +127,51 @@
         <li><strong>You're operating at genuinely high, sustained scale.</strong> At high enough consistent traffic, the per-invocation pricing model of serverless can actually cost more than provisioned container capacity running at high utilization.</li>
       </ul>
 
+      <img
+        src="../media/workload-pattern-selector.png"
+        alt="Workload pattern selector for serverless vs containers"
+        class="blog-post__visual"
+        width="1672"
+        height="941"
+        loading="lazy"
+        decoding="async"
+      />
+
       <h2>The Honest Middle Ground</h2>
       <p>Most real production systems in 2026 use both — serverless for event-driven glue code, webhooks, and spiky endpoints; containers (often orchestrated with Kubernetes or a managed equivalent like ECS or Cloud Run) for the core application services that need predictable performance. Treating this as an exclusive either/or choice is usually the wrong framing for anything beyond a small side project.</p>
 
+      <img
+        src="../media/serverless-container-total-cost.png"
+        alt="Total cost comparison between serverless and containers"
+        class="blog-post__visual"
+        width="1672"
+        height="941"
+        loading="lazy"
+        decoding="async"
+      />
+
       <h2>The Practical Starting Point</h2>
       <p>If you're building something new and genuinely don't know your traffic pattern yet, start serverless — the operational simplicity buys you time to learn your actual usage pattern before committing to infrastructure that needs active management. You can always containerize the pieces that outgrow it later; that migration is far easier than the reverse.</p>
+
+      <img
+        src="../media/hybrid-serverless-container-architecture.png"
+        alt="Hybrid serverless-container architecture diagram"
+        class="blog-post__visual"
+        width="1672"
+        height="941"
+        loading="lazy"
+        decoding="async"
+      />
+
+      <img
+        src="../media/runtime-architecture-constraints.png"
+        alt="Runtime architecture constraints diagram"
+        class="blog-post__visual"
+        width="1672"
+        height="941"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
   </div>
 
