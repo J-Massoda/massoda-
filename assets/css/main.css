@@ -667,6 +667,55 @@ p:last-child { margin-bottom: 0; }
   align-self: center;
 }
 
+.about__text p {
+  margin-bottom: 0;
+}
+
+.about__availability {
+  margin-top: 1rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.about__contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+.about__contact-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--outline-light);
+  border-radius: var(--radius-sm);
+  background-color: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  transition: border-color var(--transition), background-color var(--transition), color var(--transition), transform var(--transition);
+  overflow-wrap: anywhere;
+}
+
+.about__contact-link:hover {
+  border-color: rgba(0, 115, 230, 0.55);
+  background-color: rgba(0, 115, 230, 0.08);
+  color: var(--text);
+}
+
+.btn:focus-visible,
+.about__contact-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.about__button {
+  margin-top: 1.5rem;
+}
+
 .about__stats {
   display: flex;
   gap: 3rem;
