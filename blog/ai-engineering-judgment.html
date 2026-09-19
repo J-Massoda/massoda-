@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://massoda.me/blog/ai-engineering-judgment.html" />
+  <title>AI Can Write Code. Who Owns the Engineering Judgment? | Massoda</title>
+  <meta name="description" content="AI coding tools increase output, but engineers still own requirements, architecture, security, validation and the consequences of production software." />
+  <link rel="icon" href="../media/favicon.png" type="image/png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="AI Can Write Code. Who Owns the Engineering Judgment? | Massoda" />
+  <meta property="og:description" content="AI coding tools increase output, but engineers still own requirements, architecture, security, validation and the consequences of production software." />
+  <meta property="og:image" content="https://massoda.me/media/ai-engineering-judgment-featured.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Can Write Code. Who Owns the Engineering Judgment? | Massoda" />
+  <meta name="twitter:description" content="AI coding tools increase output, but engineers still own requirements, architecture, security, validation and the consequences of production software." />
+  <meta name="twitter:image" content="https://massoda.me/media/ai-engineering-judgment-featured.png" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI Can Write More Code. Who Owns the Engineering Judgment?",
+  "description": "AI coding tools increase output, but engineers still own requirements, architecture, security, validation and the consequences of production software.",
+  "image": "https://massoda.me/media/ai-engineering-judgment-featured.png",
+  "author": {
+    "@type": "Person",
+    "name": "Emilien Massoda",
+    "url": "https://massoda.me/"
+  },
+  "url": "https://massoda.me/blog/ai-engineering-judgment.html"
+}
+  </script>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="/" class="navbar__brand">Massoda</a>
+        <div class="navbar__links">
+          <a href="/#home" class="navbar__link">Home</a>
+          <a href="/#about" class="navbar__link">About</a>
+          <a href="/#projects" class="navbar__link">Projects</a>
+          <a href="/blog/index.html" class="navbar__link">Blog</a>
+          <a href="/#contact" class="navbar__link">Contact</a>
+        </div>
+        <div class="navbar__actions">
+          <a href="https://calendly.com/emilienmassoda/30-minutes-with-massoda" target="_blank" rel="noopener noreferrer" class="btn btn--cta">Schedule a call</a>
+          <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="navbar__mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="/#home" class="navbar__link">Home</a>
+    <a href="/#about" class="navbar__link">About</a>
+    <a href="/#projects" class="navbar__link">Projects</a>
+    <a href="/blog/index.html" class="navbar__link">Blog</a>
+    <a href="/#contact" class="navbar__link">Contact</a>
+    <a href="https://calendly.com/emilienmassoda/30-minutes-with-massoda" target="_blank" rel="noopener noreferrer" class="btn">Schedule a call</a>
+  </div>
+
+  <div class="container">
+    <div class="blog-post__hero">
+      <span class="blog-post__tag">Software Engineering</span>
+      <h1 class="blog-post__title">AI Can Write More Code. Who Owns the Engineering Judgment?</h1>
+      <p class="blog-post__meta">By Massoda</p>
+    </div>
+    <div class="blog-post__body">
+      <img class="blog-post__featured" src="../media/ai-engineering-judgment-featured.png" alt="Editorial illustration of AI-generated code passing through human architecture, review and testing decisions" width="1672" height="941" loading="eager" decoding="async" />
+
+      <p>If an AI assistant writes most of a feature, who is responsible when that feature fails in production?</p>
+
+      <p>The answer is not the model. It is still the people and organization that chose the requirement, accepted the implementation and released it.</p>
+
+      <p>AI coding tools are becoming better at producing functions, tests, migrations, documentation and complete application changes. That can reduce repetitive work and shorten feedback loops. It can also create a dangerous illusion: because code appeared quickly and looks familiar, it must be understood.</p>
+
+      <p>The scarce skill is moving from typing every line to exercising sound engineering judgment over a much larger volume of proposed work.</p>
+
+      <h2>Code generation is not problem definition</h2>
+      <p>Before code exists, someone must decide what the system should do. Requirements contain ambiguity, incentives, legal constraints, edge cases and unstated assumptions. A technically correct implementation can still solve the wrong problem.</p>
+
+      <p>An experienced engineer asks questions the prompt may not contain. What happens when two users act at the same time? Which system is authoritative? Can this operation be reversed? What data should never reach the model? How will support investigate a disputed result? What is the migration plan for existing records?</p>
+
+      <p>AI can help explore those questions. It should not silently answer them on behalf of the business.</p>
+
+      <h2>Architecture is a series of trade-offs</h2>
+      <p>There is rarely one universally correct architecture. A team chooses between simplicity and flexibility, consistency and availability, managed services and portability, speed today and maintenance tomorrow.</p>
+
+      <p>Generated code may optimize for the local task it can see. It may introduce a new dependency for something the codebase already handles, duplicate an existing abstraction or ignore operational standards hidden outside the prompt.</p>
+
+      <p>The engineer must place the change inside the wider system. That requires knowledge of data ownership, failure boundaries, team capacity, security posture, cost and the product roadmap.</p>
+
+      <h2>Plausible code is not verified code</h2>
+      <p>AI-generated code can be syntactically clean and still be wrong. It may call an API that changed, mishandle a boundary condition, weaken authorization, produce an expensive query or write a test that confirms its own incorrect assumption.</p>
+
+      <p>Review therefore needs evidence. Run the code. Inspect the diff. Test expected behaviour and failure paths. Check dependency documentation. Use static analysis, type checks, security scanning and performance measurements where they matter.</p>
+
+      <p>The review should be proportional to impact. A documentation correction and a payment authorization change do not deserve the same level of scrutiny.</p>
+
+      <h2>Security becomes a context problem</h2>
+      <p>Coding agents are most useful when they can see repositories, issue trackers, logs and development tools. That context can also contain secrets, private customer information, vulnerable code or untrusted instructions.</p>
+
+      <p>Teams should limit what an assistant can access, separate development and production credentials, review tool calls, protect branches and scan both dependencies and committed secrets. An agent should not receive production access simply because a task mentions production.</p>
+
+      <p>OWASP’s agentic AI guidance emphasizes risks created by excessive agency, tool misuse and identity or privilege abuse. Those are system-design problems. A strong model cannot compensate for unrestricted credentials.</p>
+
+      <h2>Better output can create a review bottleneck</h2>
+      <p>When one developer can generate several changes in the time previously needed for one, review capacity becomes the constraint. Teams may merge faster than they can reason.</p>
+
+      <p>The answer is not to abandon AI. It is to improve the workflow:</p>
+
+      <ul>
+        <li>keep changes small enough to understand;</li>
+        <li>require a clear problem statement and acceptance criteria;</li>
+        <li>ask the agent to explain assumptions and list uncertainties;</li>
+        <li>run tests and security checks automatically;</li>
+        <li>preserve human review for high-impact decisions;</li>
+        <li>measure production outcomes, not only lines produced;</li>
+        <li>document why important choices were made.</li>
+      </ul>
+
+      <p>AI should increase the amount of validated progress, not merely the amount of code.</p>
+
+      <h2>Judgment includes knowing when not to automate</h2>
+      <p>Some tasks are well suited to delegation: repetitive refactors, test scaffolding, documentation drafts, codebase searches and isolated prototypes. Others depend heavily on organizational context, user trust or irreversible decisions.</p>
+
+      <p>A good engineer knows the difference. They also know when a manual implementation is clearer than a clever generated abstraction, when a database change needs staged migration, and when a customer-facing incident deserves human communication rather than an automated response.</p>
+
+      <h2>Junior and senior work will both change</h2>
+      <p>AI does not remove the need for engineers to understand programming fundamentals. In fact, reviewing unfamiliar output requires a strong mental model of the language, framework, database and network.</p>
+
+      <p>For junior developers, the risk is accepting code before they can explain it. For senior developers, the risk is using speed to justify wider changes without sufficient validation. Both need deliberate practice: read the diff, predict its behaviour, test the prediction and investigate when reality disagrees.</p>
+
+      <p>Mentorship also matters. Teams should teach how to challenge generated output, not only how to prompt for it.</p>
+
+      <h2>Ownership remains human</h2>
+      <p>The person who merges a change owns more than its formatting. They accept its behaviour, risks and maintenance cost. The team that deploys it owns the customer impact. The company that benefits from it owns the duty to govern it.</p>
+
+      <p>This does not make AI coding tools less valuable. It explains how to use them professionally.</p>
+
+      <p>The future engineer may type fewer routine lines and coordinate more automated work. However, requirements, architecture, verification, security and accountability do not disappear. They become the work that matters most.</p>
+
+      <h2>Work With Massoda</h2>
+      <p>I help teams turn product requirements into maintainable web, backend, fintech and automation systems, using AI where it improves delivery without outsourcing engineering responsibility. Email <a href="mailto:hello@massoda.me">hello@massoda.me</a> or contact me on <a href="https://wa.me/237671260005" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>
+
+      <h2>Sources and Further Reading</h2>
+      <ul>
+        <li><a href="https://www.nist.gov/itl/ssd" target="_blank" rel="noopener noreferrer">NIST Secure Software Development Framework</a></li>
+        <li><a href="https://docs.github.com/en/code-security" target="_blank" rel="noopener noreferrer">GitHub documentation: Code security</a></li>
+        <li><a href="https://owasp.org/www-project-agentic-ai/" target="_blank" rel="noopener noreferrer">OWASP Agentic AI Threats and Mitigations</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="/" class="footer__brand">Massoda</a>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="/#home">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#projects">Projects</a>
+          <a href="/blog/index.html">Blog</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/jean-emilien-l-59b7061a9" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/J-Massoda" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        </div>
+        <p class="footer__copy">&copy; 2025 Massoda</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

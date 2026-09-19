@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://massoda.me/blog/woocommerce-order-reliability.html" />
+  <title>WooCommerce Order Reliability After Payment | Massoda</title>
+  <meta name="description" content="Learn how dependable WooCommerce integrations handle paid-order events, queues, API signing, retries, duplicate delivery, logging and failed fulfilment." />
+  <link rel="icon" href="../media/favicon.png" type="image/png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="WooCommerce Order Reliability After Payment | Massoda" />
+  <meta property="og:description" content="Learn how dependable WooCommerce integrations handle paid-order events, queues, API signing, retries, duplicate delivery, logging and failed fulfilment." />
+  <meta property="og:image" content="https://massoda.me/media/woocommerce-order-reliability-featured.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WooCommerce Order Reliability After Payment | Massoda" />
+  <meta name="twitter:description" content="Learn how dependable WooCommerce integrations handle paid-order events, queues, API signing, retries, duplicate delivery, logging and failed fulfilment." />
+  <meta name="twitter:image" content="https://massoda.me/media/woocommerce-order-reliability-featured.png" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "What Happens After “Order Paid”? The Hidden Reliability Work Behind WooCommerce Integrations",
+  "description": "Learn how dependable WooCommerce integrations handle paid-order events, queues, API signing, retries, duplicate delivery, logging and failed fulfilment.",
+  "image": "https://massoda.me/media/woocommerce-order-reliability-featured.png",
+  "author": {
+    "@type": "Person",
+    "name": "Emilien Massoda",
+    "url": "https://massoda.me/"
+  },
+  "url": "https://massoda.me/blog/woocommerce-order-reliability.html"
+}
+  </script>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="/" class="navbar__brand">Massoda</a>
+        <div class="navbar__links">
+          <a href="/#home" class="navbar__link">Home</a>
+          <a href="/#about" class="navbar__link">About</a>
+          <a href="/#projects" class="navbar__link">Projects</a>
+          <a href="/blog/index.html" class="navbar__link">Blog</a>
+          <a href="/#contact" class="navbar__link">Contact</a>
+        </div>
+        <div class="navbar__actions">
+          <a href="https://calendly.com/emilienmassoda/30-minutes-with-massoda" target="_blank" rel="noopener noreferrer" class="btn btn--cta">Schedule a call</a>
+          <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="navbar__mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="/#home" class="navbar__link">Home</a>
+    <a href="/#about" class="navbar__link">About</a>
+    <a href="/#projects" class="navbar__link">Projects</a>
+    <a href="/blog/index.html" class="navbar__link">Blog</a>
+    <a href="/#contact" class="navbar__link">Contact</a>
+    <a href="https://calendly.com/emilienmassoda/30-minutes-with-massoda" target="_blank" rel="noopener noreferrer" class="btn">Schedule a call</a>
+  </div>
+
+  <div class="container">
+    <div class="blog-post__hero">
+      <span class="blog-post__tag">WordPress Engineering</span>
+      <h1 class="blog-post__title">What Happens After “Order Paid”? The Hidden Reliability Work Behind WooCommerce Integrations</h1>
+      <p class="blog-post__meta">By Massoda</p>
+    </div>
+    <div class="blog-post__body">
+      <img class="blog-post__featured" src="../media/woocommerce-order-reliability-featured.png" alt="Editorial WooCommerce order flow moving from paid status through signing, queueing, API delivery, retry and verification" width="1672" height="941" loading="eager" decoding="async" />
+
+      <p>What does “order paid” actually guarantee?</p>
+
+      <p>It confirms a financial event reached a successful state. It does not guarantee that inventory was reserved, an external supplier accepted the order, a digital service was activated or a customer received what they bought.</p>
+
+      <p>For a basic shop, the steps after payment may be simple. For a WooCommerce site connected to logistics, airtime, subscriptions, bookings or another company’s API, those steps form a distributed workflow. Every boundary can fail independently.</p>
+
+      <h2>Start with the correct WooCommerce event</h2>
+      <p>An integration should not depend on the thank-you page or a browser redirect. Customers close tabs, payment methods confirm asynchronously and frontend requests can be replayed.</p>
+
+      <p>Use a trusted server-side order state or payment event. The exact WooCommerce hook depends on the business and gateway. A workflow may react when payment is completed, when an order enters processing or when a specific gateway confirms settlement. The implementation should be explicit about which state means “safe to fulfil.”</p>
+
+      <p>Do not assume all paid orders follow one identical path. Virtual products, downloadable products, bank transfers and custom gateways can produce different status transitions.</p>
+
+      <h2>Keep the event handler small</h2>
+      <p>The function attached to the WooCommerce event should validate the order, create a durable fulfilment job and return. It should not hold the checkout request open while calling a slow third-party API.</p>
+
+      <p>WordPress and WooCommerce commonly use Action Scheduler for background work. It provides a traceable queue for scheduled tasks and is already used by many extensions. A queue allows the site to retry temporary failures without asking the customer to pay again.</p>
+
+      <p>The job payload should contain stable identifiers, not an uncontrolled copy of every order field. Store the order ID, fulfilment type, version and a unique business key. Load current details securely when the worker runs.</p>
+
+      <h2>Make fulfilment idempotent</h2>
+      <p>WooCommerce hooks can run more than once. Administrators can change an order status manually. Workers can restart. HTTP requests can time out after the remote provider has already completed the action.</p>
+
+      <p>Before sending a command, create a fulfilment record with a unique constraint for the order and operation. Reuse a stable idempotency key on retries. If the provider supports idempotency, send it. If the provider does not, use its transaction lookup endpoint before repeating an uncertain request.</p>
+
+      <p>A boolean order meta field such as _sent_to_provider = yes is rarely enough. It does not explain whether the provider accepted, rejected or partially completed the request.</p>
+
+      <p>Use states such as queued, sending, accepted, confirmed, retrying, failed and manual_review. Record the provider reference and each attempt.</p>
+
+      <h2>Sign requests correctly</h2>
+      <p>Some supplier APIs use shared-secret HMAC signatures. Others use RSA signatures, OAuth or signed JWTs. The difficulty is often not the cryptographic primitive. It is matching the provider’s exact canonicalization rules.</p>
+
+      <p>Small differences matter: field order, whitespace, character encoding, timestamps, line endings, base64 variants and whether the signature covers the raw body or a normalized string.</p>
+
+      <p>Store private keys and API secrets outside public source code. Limit file permissions and administrative access. Never write secrets or complete authorization headers to logs. Build a safe diagnostic mode that records request IDs, timestamps, hashes and redacted payloads.</p>
+
+      <p>If the provider requires IP allowlisting, confirm the actual outbound IP used by the web server or proxy. A site’s public inbound address is not automatically its outbound address. If hosting cannot guarantee a stable egress IP, use an appropriate fixed-egress service or hosting arrangement.</p>
+
+      <h2>Treat the response as one piece of evidence</h2>
+      <p>An HTTP 200 does not always mean the business operation completed. Some APIs return application errors inside a successful HTTP response. Others acknowledge receipt and finish later.</p>
+
+      <p>Parse both transport and business status. Validate the response schema. Store the provider transaction ID. If the operation remains pending, schedule a status check or wait for a signed callback.</p>
+
+      <p>Likewise, an HTTP timeout does not prove failure. Mark the attempt uncertain, query the provider and retry only when it is safe.</p>
+
+      <h2>Webhooks need verification and replay protection</h2>
+      <p>When a provider calls WooCommerce back, verify the signature against the raw request, enforce an acceptable timestamp window if supported and record the provider event ID before processing.</p>
+
+      <p>Return quickly and move heavy work to the queue. Duplicate callbacks should not create duplicate fulfilment. Out-of-order events should not move a confirmed order backward without a valid reason.</p>
+
+      <p>WooCommerce’s own webhook documentation notes that webhooks can be automatically disabled after repeated unsuccessful deliveries. That is a useful reminder: delivery health must be monitored rather than assumed.</p>
+
+      <h2>Design retries around the error</h2>
+      <p>Retry connection timeouts, rate limits and temporary provider failures with exponential backoff and jitter. Do not repeatedly send requests that fail because of invalid customer data, unsupported products or bad credentials.</p>
+
+      <p>Define a maximum attempt count and a manual-review state. Notify the appropriate team with enough context to act. A customer should not need to discover the failure before the business does.</p>
+
+      <p>Action Scheduler logs, WooCommerce order notes and a dedicated integration log can complement one another. Customer-visible order notes should remain understandable. Deep technical information belongs in restricted operational logs.</p>
+
+      <h2>Build an operator recovery path</h2>
+      <p>Reliable automation still needs a human recovery interface. An authorized administrator should be able to see the current fulfilment state, the last provider response, the safe next action and whether a retry could create a duplicate.</p>
+
+      <p>Useful actions may include refresh status, retry safely, mark for refund, attach a provider reference or close after verified manual fulfilment. Every manual action should be audited.</p>
+
+      <h2>Test the failures, not only the happy path</h2>
+      <p>End-to-end testing should cover successful payment and fulfilment, but also:</p>
+
+      <ul>
+        <li>the provider timing out after accepting a request;</li>
+        <li>duplicate WooCommerce events;</li>
+        <li>duplicate or delayed callbacks;</li>
+        <li>invalid signatures;</li>
+        <li>rate limiting and 5xx responses;</li>
+        <li>worker interruption;</li>
+        <li>a product mapping that no longer exists;</li>
+        <li>a paid order that requires refund after permanent fulfilment failure.</li>
+      </ul>
+
+      <p>The goal is not merely to see a green success message. It is to prove the workflow reaches a correct and explainable state under failure.</p>
+
+      <h2>The integration is an operating system for the order</h2>
+      <p>A custom plugin may contain the code, but reliability comes from the whole design: trusted triggers, durable jobs, idempotency, secure authentication, verified callbacks, bounded retries, reconciliation, monitoring and operator recovery.</p>
+
+      <p>That is what happens after “order paid.” The customer sees one line. The system must make that line true.</p>
+
+      <h2>Work With Massoda</h2>
+      <p>I build and stabilize WordPress, WooCommerce and custom API integrations, including payment-triggered workflows, signed requests, background queues and operational recovery. Email <a href="mailto:hello@massoda.me">hello@massoda.me</a> or contact me on <a href="https://wa.me/237671260005" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>
+
+      <h2>Sources and Further Reading</h2>
+      <ul>
+        <li><a href="https://developer.woocommerce.com/docs/" target="_blank" rel="noopener noreferrer">WooCommerce REST API documentation</a></li>
+        <li><a href="https://woocommerce.com/document/webhooks/" target="_blank" rel="noopener noreferrer">WooCommerce webhook documentation</a></li>
+        <li><a href="https://github.com/woocommerce/action-scheduler" target="_blank" rel="noopener noreferrer">Action Scheduler</a></li>
+        <li><a href="https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/" target="_blank" rel="noopener noreferrer">WordPress Security APIs</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="/" class="footer__brand">Massoda</a>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="/#home">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#projects">Projects</a>
+          <a href="/blog/index.html">Blog</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/jean-emilien-l-59b7061a9" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/J-Massoda" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        </div>
+        <p class="footer__copy">&copy; 2025 Massoda</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

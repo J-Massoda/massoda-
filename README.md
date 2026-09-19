@@ -13,7 +13,7 @@ Case studies, services, and a technical blog aimed at freelance/contract work an
 
 - **10 real case studies** — from a full-stack fintech wallet platform (Mobi-Kumbu) to a multi-vendor WooCommerce marketplace (FreshBox Tech), a machine learning project (Eth AI Forecaster), and more. No placeholder/filler projects.
 - **7 service pages** covering UI/UX design, interaction design, frontend engineering, mobile & web app development, machine learning, and data analytics.
-- **10-post blog** covering current cloud, AWS, DevOps, and AI-infrastructure trends.
+- **17-post blog** covering current cloud, AWS, DevOps, AI-infrastructure, security, fintech, and engineering-trends topics.
 - Working contact form (FormSubmit-powered) plus a Calendly booking link.
 
 ### Creative Portfolio (`/creative-portfolio`)
@@ -57,7 +57,7 @@ No framework, no build step — plain HTML, CSS, and vanilla JavaScript througho
 ├── media/                      # Dev portfolio images, favicons, OG images
 ├── portfolio/                  # 10 case study pages + index
 ├── services/                   # 7 dev service pages
-├── blog/                       # 10 dev blog posts + index
+├── blog/                       # 17 dev blog posts + index
 └── creative-portfolio/
     ├── index.html
     ├── blog.html + blog-*.html # 3 posts

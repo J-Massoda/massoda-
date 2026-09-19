@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://massoda.me/blog/agentic-engineering-workflows.html" />
+  <title>From AI Assistant to Agentic Engineering Workflows | Massoda</title>
+  <meta name="description" content="Explore how software teams are moving from code suggestions to supervised AI agents that research, implement, test and prepare changes for review." />
+  <link rel="icon" href="../media/favicon.png" type="image/png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="From AI Assistant to Agentic Engineering Workflows | Massoda" />
+  <meta property="og:description" content="Explore how software teams are moving from code suggestions to supervised AI agents that research, implement, test and prepare changes for review." />
+  <meta property="og:image" content="https://massoda.me/media/agentic-engineering-workflows-featured.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="From AI Assistant to Agentic Engineering Workflows | Massoda" />
+  <meta name="twitter:description" content="Explore how software teams are moving from code suggestions to supervised AI agents that research, implement, test and prepare changes for review." />
+  <meta name="twitter:image" content="https://massoda.me/media/agentic-engineering-workflows-featured.png" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "From AI Assistant to Agentic Engineering: How Development Workflows Are Changing",
+  "description": "Explore how software teams are moving from code suggestions to supervised AI agents that research, implement, test and prepare changes for review.",
+  "image": "https://massoda.me/media/agentic-engineering-workflows-featured.png",
+  "author": {
+    "@type": "Person",
+    "name": "Emilien Massoda",
+    "url": "https://massoda.me/"
+  },
+  "url": "https://massoda.me/blog/agentic-engineering-workflows.html"
+}
+  </script>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="/" class="navbar__brand">Massoda</a>
+        <div class="navbar__links">
+          <a href="/#home" class="navbar__link">Home</a>
+          <a href="/#about" class="navbar__link">About</a>
+          <a href="/#projects" class="navbar__link">Projects</a>
+          <a href="/blog/index.html" class="navbar__link">Blog</a>
+          <a href="/#contact" class="navbar__link">Contact</a>
+        </div>
+        <div class="navbar__actions">
+          <a href="https://calendly.com/emilienmassoda/30-minutes-with-massoda" target="_blank" rel="noopener noreferrer" class="btn btn--cta">Schedule a call</a>
+          <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="navbar__mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="/#home" class="navbar__link">Home</a>
+    <a href="/#about" class="navbar__link">About</a>
+    <a href="/#projects" class="navbar__link">Projects</a>
+    <a href="/blog/index.html" class="navbar__link">Blog</a>
+    <a href="/#contact" class="navbar__link">Contact</a>
+    <a href="https://calendly.com/emilienmassoda/30-minutes-with-massoda" target="_blank" rel="noopener noreferrer" class="btn">Schedule a call</a>
+  </div>
+
+  <div class="container">
+    <div class="blog-post__hero">
+      <span class="blog-post__tag">AI Development</span>
+      <h1 class="blog-post__title">From AI Assistant to Agentic Engineering: How Development Workflows Are Changing</h1>
+      <p class="blog-post__meta">By Massoda</p>
+    </div>
+    <div class="blog-post__body">
+      <img class="blog-post__featured" src="../media/agentic-engineering-workflows-featured.png" alt="Editorial development workflow showing one AI assistant evolving into coordinated research, coding, testing and review workstreams" width="1672" height="941" loading="eager" decoding="async" />
+
+      <p>What changes when an AI tool stops answering questions and starts completing a sequence of engineering tasks?</p>
+
+      <p>That is the shift from an assistant to an agentic workflow. The assistant waits for a prompt and produces a response. The agent receives an objective, gathers context, uses tools, performs steps and returns work for review.</p>
+
+      <p>The distinction matters because it changes what developers supervise. Instead of checking one suggestion, they may be reviewing a chain that touched files, ran commands, created tests and prepared a pull request.</p>
+
+      <h2>A useful maturity spectrum</h2>
+      <p>AI-assisted development is not one fixed capability. It can be understood as a spectrum.</p>
+
+      <p>At the first level, autocomplete predicts the next line or block. The developer remains in continuous control.</p>
+
+      <p>At the second level, a conversational assistant explains code, drafts a function or proposes a fix. The developer selects and applies the result.</p>
+
+      <p>At the third level, a task agent can inspect a repository, edit several files, run tests and iterate after failures. The developer defines the task and reviews a larger unit of work.</p>
+
+      <p>At the fourth level, coordinated agents or workstreams divide research, implementation, testing and review. The human becomes the person who defines boundaries, resolves ambiguity and decides what is safe to merge.</p>
+
+      <p>Teams can benefit at any level. More autonomy is not automatically better.</p>
+
+      <h2>The workflow begins before the prompt</h2>
+      <p>Agents perform better when the repository explains itself. Clear setup instructions, repeatable commands, typed interfaces, useful tests and small modules reduce ambiguity for humans and automated tools alike.</p>
+
+      <p>A strong task description includes the problem, acceptance criteria, affected users, constraints, examples and what must not change. It also identifies the source of truth for product behaviour.</p>
+
+      <p>This is not “prompt engineering” as a separate magic skill. It is good engineering communication made executable.</p>
+
+      <h2>Research becomes part of the run</h2>
+      <p>A capable agent can search a codebase, trace a request path, compare related components and inspect tests before editing anything. That is valuable because many defects are caused by changing the first visible file without understanding the system.</p>
+
+      <p>However, research results still need judgment. The most frequently used pattern in a repository may be legacy code. A passing test may encode outdated behaviour. Documentation may not match production.</p>
+
+      <p>Agents should surface their assumptions and cite the files, tests or documentation that informed a decision. The reviewer should be able to follow the reasoning without reconstructing the entire run.</p>
+
+      <h2>Parallel work needs isolation</h2>
+      <p>When several automated tasks edit the same codebase, collision becomes a practical problem. Separate branches or worktrees can isolate changes. Clear ownership of files and interfaces reduces merge conflicts.</p>
+
+      <p>Parallelism works best for tasks that are genuinely separable: one workstream researches an API, another adds unit tests and another prepares documentation. It works poorly when several agents make overlapping architectural decisions without coordination.</p>
+
+      <p>The goal is not the maximum number of agents. It is the shortest trustworthy path to a coherent change.</p>
+
+      <h2>Tests become an execution contract</h2>
+      <p>Tests give an agent immediate feedback, but only for behaviour the tests cover. A weak test suite can make a wrong implementation appear complete.</p>
+
+      <p>Useful agentic workflows combine unit tests, integration tests, type checks, linting, security scanning and targeted manual verification. The task should define which checks must pass and which areas require human review.</p>
+
+      <p>Agents can also propose tests before implementation. That can expose ambiguous requirements early. Reviewers should watch for tests that simply mirror the generated code instead of asserting business behaviour.</p>
+
+      <h2>Review moves up a level</h2>
+      <p>As generation becomes faster, reviewing every line with equal attention becomes unrealistic. Good workflows create review layers.</p>
+
+      <p>First, automated checks reject obvious failures. Second, the agent provides a concise change summary, assumptions, test evidence and known limitations. Third, a human reviews architecture, security, data changes and customer impact. High-risk changes receive deeper or specialist review.</p>
+
+      <p>The final decision should be based on evidence, not the confidence of the generated explanation.</p>
+
+      <h2>Production access should remain exceptional</h2>
+      <p>An engineering agent can be productive without broad production permissions. Give it repository access, isolated development environments, test data and scoped tools. Protect main branches and deployment credentials.</p>
+
+      <p>If an agent participates in deployment, separate preparation from authorization. It may build an artifact and present a plan, while a controlled system or human approves the release. Record the actions and preserve rollback capability.</p>
+
+      <p>Agentic speed should not bypass change management. It should make change management better informed.</p>
+
+      <h2>Metrics must measure outcomes</h2>
+      <p>Lines of generated code and number of completed tasks are easy to count but weak indicators of value. More meaningful measures include cycle time, escaped defects, review time, rollback rate, customer impact, reliability and developer time recovered.</p>
+
+      <p>Teams should also watch for hidden costs: larger pull requests, duplicated abstractions, dependency growth, flaky tests and time spent correcting plausible but incorrect output.</p>
+
+      <p>The best workflow is not the one that produces the most code. It is the one that delivers useful changes with acceptable risk and less wasted effort.</p>
+
+      <h2>What developers should learn now</h2>
+      <p>Developers still need language and framework knowledge. They also need stronger skills in task decomposition, system design, test strategy, threat modeling, observability and review.</p>
+
+      <p>Writing precise acceptance criteria becomes more valuable. So does recognizing when a task is too ambiguous for autonomous execution. Engineers who understand the business domain can guide agents toward useful work and detect when the output is locally correct but globally wrong.</p>
+
+      <h2>The future is supervised execution</h2>
+      <p>Agentic engineering is not a handover of responsibility. It is a new way to organize execution.</p>
+
+      <p>The human defines the goal, constraints and acceptable risk. Automated tools explore and perform bounded work. Tests and policies provide feedback. Reviewers decide whether the evidence is sufficient. Production systems monitor the outcome.</p>
+
+      <p>Used this way, agents can remove friction without removing accountability. That is a more realistic and more valuable future than software that supposedly builds itself.</p>
+
+      <h2>Work With Massoda</h2>
+      <p>I design modern development and automation workflows around clear requirements, reliable APIs, maintainable code and responsible AI use. To discuss a product or engineering engagement, email <a href="mailto:hello@massoda.me">hello@massoda.me</a> or contact me on <a href="https://wa.me/237671260005" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>
+
+      <h2>Sources and Further Reading</h2>
+      <ul>
+        <li><a href="https://www.nist.gov/itl/ssd" target="_blank" rel="noopener noreferrer">NIST Secure Software Development Framework</a></li>
+        <li><a href="https://platform.openai.com/docs/guides" target="_blank" rel="noopener noreferrer">OpenAI Developers</a></li>
+        <li><a href="https://docs.github.com/en/code-security" target="_blank" rel="noopener noreferrer">GitHub documentation: Code security</a></li>
+        <li><a href="https://digital-strategy.ec.europa.eu/en/library/white-paper-artificial-intelligence" target="_blank" rel="noopener noreferrer">European Commission: Agentic AI and European adoption</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="/" class="footer__brand">Massoda</a>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="/#home">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#projects">Projects</a>
+          <a href="/blog/index.html">Blog</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/jean-emilien-l-59b7061a9" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/J-Massoda" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        </div>
+        <p class="footer__copy">&copy; 2025 Massoda</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
