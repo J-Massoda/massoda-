@@ -1,41 +1,40 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="canonical" href="https://massoda.me/blog/ci-cd-pipelines-2026-ai-assisted-devops.html" />
-  <title>CI/CD Pipelines in 2026: What's Changed With AI-Assisted DevOps , Massoda</title>
-  <meta name="description" content="AI-assisted code review, auto-generated tests, and deployment automation are changing CI/CD pipelines in 2026. Here's what's actually different in practice." />
+  <link rel="canonical" href="https://massoda.me/portfolio/developer-productivity-release-intelligence-hub.html" />
+  <title>Developer Productivity &amp; Release Intelligence Hub | Massoda</title>
+  <meta name="description" content="An interactive release-intelligence dashboard connecting deployments, DORA-style metrics, CI health, incidents and service ownership." />
   <link rel="icon" href="../media/favicon.png" type="image/png" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="CI/CD Pipelines in 2026: What's Changed With AI-Assisted DevOps , Massoda" />
-  <meta property="og:description" content="AI-assisted code review, auto-generated tests, and deployment automation are changing CI/CD pipelines in 2026. Here's what's actually different in practice." />
-  <meta property="og:image" content="https://massoda.me/media/ai-assisted-ci-cd-featured.png" />
+  <meta property="og:title" content="Developer Productivity &amp; Release Intelligence Hub | Massoda" />
+  <meta property="og:description" content="An interactive release-intelligence dashboard connecting deployments, DORA-style metrics, CI health, incidents and service ownership." />
+  <meta property="og:url" content="https://massoda.me/portfolio/developer-productivity-release-intelligence-hub.html" />
+  <meta property="og:image" content="https://massoda.me/media/pulsedeck-dashboard-preview.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CI/CD Pipelines in 2026: What's Changed With AI-Assisted DevOps , Massoda" />
-  <meta name="twitter:description" content="AI-assisted code review, auto-generated tests, and deployment automation are changing CI/CD pipelines in 2026. Here's what's actually different in practice." />
-  <meta name="twitter:image" content="https://massoda.me/media/ai-assisted-ci-cd-featured.png" />
+  <meta name="twitter:title" content="Developer Productivity &amp; Release Intelligence Hub | Massoda" />
+  <meta name="twitter:description" content="An interactive release-intelligence dashboard connecting deployments, DORA-style metrics, CI health, incidents and service ownership." />
+  <meta name="twitter:image" content="https://massoda.me/media/pulsedeck-dashboard-preview.png" />
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
-  <script type="application/ld+json">
-{
+  <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "CI/CD Pipelines in 2026: What's Changed With AI-Assisted DevOps",
-  "description": "AI-assisted code review, auto-generated tests, and deployment automation are changing CI/CD pipelines in 2026. Here's what's actually different in practice.",
-  "image": "https://massoda.me/media/ai-assisted-ci-cd-featured.png",
-  
+  "@type": "SoftwareSourceCode",
+  "name": "Developer Productivity & Release Intelligence Hub",
+  "description": "An interactive release-intelligence dashboard connecting deployments, DORA-style metrics, CI health, incidents and service ownership.",
+  "url": "https://massoda.me/portfolio/developer-productivity-release-intelligence-hub.html",
+  "image": "https://massoda.me/media/pulsedeck-dashboard-preview.png",
+  "codeRepository": "https://github.com/J-Massoda/developer-productivity-release-intelligence-hub",
   "author": {
     "@type": "Person",
-    "name": "Emilien Massoda",
+    "name": "Jean Emilien Massoda",
     "url": "https://massoda.me/"
-  },
-  "url": "https://massoda.me/blog/ci-cd-pipelines-2026-ai-assisted-devops.html"
-}
-  </script>
+  }
+}</script>
 </head>
 <body>
 
@@ -83,94 +82,47 @@
     <a href="/#about"    class="navbar__link">About</a>
     <a href="/#projects" class="navbar__link">Projects</a>
     <a href="/blog/index.html" class="navbar__link">Blog</a>
-    <a href="/#contact"  class="navbar__link">Contact</a>
+          <a href="/#contact"  class="navbar__link">Contact</a>
     <a href="https://calendly.com/emilienmassoda/30-minutes-with-massoda" target="_blank" rel="noopener noreferrer" class="btn">Schedule a call</a>
   </div>
 
 
-  <div class="container">
-    <div class="blog-post__hero">
-      <span class="blog-post__tag">DevOps</span>
-      <h1 class="blog-post__title">CI/CD Pipelines in 2026: What's Changed With AI-Assisted DevOps</h1>
-      <p class="blog-post__meta">By Massoda</p>
-    </div>
-    <div class="blog-post__body">
-      <p>CI/CD pipelines have been the backbone of modern software delivery for years, but the tooling around them has genuinely shifted in 2026 , not a wholesale reinvention, but real, practical changes worth knowing if you're building or maintaining pipelines today.</p>
-
-      <p>This article explains the concrete pipeline changes teams should adopt now to shorten feedback loops and reduce deployment risk.</p>
-
-      <figure class="blog-post__visual blog-post__visual--featured">
-        <img src="../media/ai-assisted-ci-cd-featured.png" width="1672" height="941" alt="AI-assisted CI/CD featured infographic" loading="eager" fetchpriority="high" decoding="async" />
-      </figure>
-
-      <h2>AI-Assisted Code Review in the Pipeline</h2>
-      <p>Automated code review tools that run as a pipeline step , flagging potential bugs, security issues, and style violations before a human reviewer even looks at a pull request , have moved from novelty to standard practice at a growing share of engineering organizations. This doesn't replace human review; it front-loads the mechanical, easily-automatable parts of review so human reviewers spend their attention on architecture and logic rather than catching a missing null check.</p>
-
-      <img
-        src="../media/where-ai-assists-ci-cd.png"
-        alt="Where AI assists in the CI/CD pipeline"
-        class="blog-post__visual"
-        width="1672"
-        height="941"
-        loading="lazy"
-        decoding="async"
-      />
-
-      <h2>Auto-Generated Test Coverage</h2>
-      <p>AI-assisted test generation , producing unit tests for new code as part of the pipeline, or flagging under-tested code paths , has become common enough that "the AI writes obvious tests, the human writes the tests for edge cases and business logic" is a fairly standard division of labor now. The caveat that matters: generated tests are only as good as the review they receive; auto-generated tests that simply assert current behavior (rather than *correct* behavior) can quietly lock in bugs rather than catch them.</p>
-
-      <img
-        src="../media/ai-human-code-review-gate.png"
-        alt="Diagram of AI-human code review gate in pipelines"
-        class="blog-post__visual"
-        width="1672"
-        height="941"
-        loading="lazy"
-        decoding="async"
-      />
-
-      <h2>Smarter Deployment Automation</h2>
-      <p>Progressive delivery patterns , canary deployments, automated rollback triggered by anomaly detection in production metrics rather than manual monitoring , have become more accessible as tooling around them has matured. The practical shift is less "AI decides to deploy" and more "automated systems catch a regression and roll back faster than a human would notice it," which meaningfully reduces the blast radius of bad deployments.</p>
-
-      <img
-        src="../media/ai-generated-test-review-loop.png"
-        alt="Loop showing auto-generated tests feeding into review"
-        class="blog-post__visual"
-        width="1672"
-        height="941"
-        loading="lazy"
-        decoding="async"
-      />
-
-      <img
-        src="../media/progressive-delivery-safety-gates.png"
-        alt="Progressive delivery safety gates diagram"
-        class="blog-post__visual"
-        width="1672"
-        height="941"
-        loading="lazy"
-        decoding="async"
-      />
-
-      <h2>What Hasn't Changed</h2>
-      <p>The fundamentals of good CI/CD practice are unchanged: fast feedback loops, reliable and reproducible builds, meaningful test coverage (not just high percentage numbers), and pipelines that engineers actually trust enough not to route around. AI-assisted tooling accelerates and augments good practice , it doesn't substitute for a pipeline that was poorly designed to begin with. A slow, flaky pipeline with AI-generated tests bolted onto it is still a slow, flaky pipeline.</p>
-
-      <h2>The Skill That Matters Now</h2>
-      <p>The differentiating skill isn't knowing that these tools exist , adoption is already broad. It's knowing how to configure and tune them so they add genuine signal rather than noise: setting review tools to flag real issues without drowning reviewers in false positives, writing test generation prompts or configs that target actual risk areas, and setting rollback thresholds sensitive enough to catch real regressions without triggering on normal variance. That configuration work is where real DevOps judgment still lives.</p>
-
-      <img
-        src="../media/ci-cd-learning-feedback-loop.png"
-        alt="CI/CD learning feedback loop"
-        class="blog-post__visual"
-        width="1672"
-        height="941"
-        loading="lazy"
-        decoding="async"
-      />
+  <div class="project-detail__hero">
+    <div class="container">
+      <a href="index.html" class="page-hero__back">&#x2190; All projects</a>
+      <span class="project-detail__tag">Developer Platform Engineering</span>
+      <h1 class="project-detail__title fade-in">Developer Productivity &amp; Release Intelligence Hub</h1>
+      <p class="project-detail__lead">PulseDeck turns deployment, pull-request and incident events into a shared view of delivery speed, release safety, recovery and service ownership. Its indicators are calculated from an underlying synthetic event stream rather than displayed as decorative numbers.</p>
+      <div class="project-detail__actions">
+        <a href="https://j-massoda.github.io/developer-productivity-release-intelligence-hub/" target="_blank" rel="noopener noreferrer" class="btn btn--accent">View interactive demo &#x2197;</a>
+        <a href="https://github.com/J-Massoda/developer-productivity-release-intelligence-hub" target="_blank" rel="noopener noreferrer" class="btn">View source code &#x2197;</a>
+      </div>
     </div>
   </div>
-
-<!-- FOOTER -->
+  <div class="container">
+    <div class="project-detail__image-hero fade-in"><img src="../media/pulsedeck-dashboard-preview.png" alt="PulseDeck developer platform engineering interface preview" /></div>
+    <dl class="project-facts fade-in">
+      <div><dt>Product</dt><dd>PulseDeck</dd></div>
+      <div><dt>Focus</dt><dd>Developer Platform Engineering</dd></div>
+      <div><dt>Audience</dt><dd>Engineering-platform teams, DevOps teams and technical leaders improving delivery flow without reducing productivity to lines of code.</dd></div>
+      <div><dt>Evidence</dt><dd>Working demo, source and tests</dd></div>
+    </dl>
+    <div class="project-detail__sections">
+      <section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Problem and purpose</div><h2 class="project-detail__section-title">What this system solves</h2><p class="project-detail__section-text">PulseDeck turns deployment, pull-request and incident events into a shared view of delivery speed, release safety, recovery and service ownership. Its indicators are calculated from an underlying synthetic event stream rather than displayed as decorative numbers.</p><p class="project-detail__section-text">Engineering-platform teams, DevOps teams and technical leaders improving delivery flow without reducing productivity to lines of code.</p></section>
+      <section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Ownership</div><h2 class="project-detail__section-title">My role</h2><p class="project-detail__section-text">I designed the event shapes, metric calculations, release-readiness model, incident narrative, service catalogue, interactive simulation and test suite.</p></section>
+      <section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Working scope</div><h2 class="project-detail__section-title">Capabilities demonstrated</h2><ul class="case-study__list"><li>Calculated deployment frequency and change-failure rate</li><li>Calculated mean time to recover and pull-request lead time</li><li>Reporting-window selection</li><li>Release register and readiness contract</li><li>CI/CD pipeline and flaky-test visibility</li><li>Incident timeline, service ownership and deployment simulation</li></ul></section>
+      <section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Architecture</div><h2 class="project-detail__section-title">System flow</h2><div class="architecture-flow">Pull request → checks → release → production deployment → healthy evidence or rollback → incident → recovery and follow-up</div></section>
+      <section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Engineering judgment</div><h2 class="project-detail__section-title">Important decisions</h2><p class="project-detail__section-text">Metrics derive from events instead of decorative constants. Service ownership is first-class, readiness is weighted rather than falsely binary, and recovery evidence is separated from post-incident follow-up.</p></section>
+      <section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Reliability and safety</div><h2 class="project-detail__section-title">Beyond the happy path</h2><p class="project-detail__section-text">A simulated failed deployment creates a rollback incident and changes the calculated indicators. Local persistence preserves user-generated demonstration events until reset.</p></section>
+      <section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Verification</div><h2 class="project-detail__section-title">Testing and evidence</h2><p class="project-detail__section-text">Automated tests cover delivery metrics, readiness scoring and service aggregation. All events and reported values are synthetic demonstration data.</p></section>
+      <section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Boundaries</div><h2 class="project-detail__section-title">Current limitations</h2><div class="case-study__notice"><p>The browser version does not connect to real source-control, CI/CD, cloud, monitoring or incident-management accounts.</p></div></section>
+      <section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Next stage</div><h2 class="project-detail__section-title">Production extension path</h2><p class="project-detail__section-text">A production version would verify webhook signatures, deduplicate delivery IDs, normalize provider events, store raw evidence and expose team-level metrics through authenticated APIs.</p></section>
+      <section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Technology</div><h2 class="project-detail__section-title">Tools and concepts</h2><div class="technology-list"><span class="technology-pill">JavaScript</span><span class="technology-pill">CI/CD</span><span class="technology-pill">DORA Metrics</span><span class="technology-pill">DevOps</span><span class="technology-pill">Incident Management</span><span class="technology-pill">Internal Tooling</span></div></section>
+      <section class="case-study-cta fade-in"><p class="project-detail__section-label">Let’s work together</p><h2>Building something that needs to work beyond the happy path?</h2><p>I help teams turn complex product, integration and reliability requirements into clear, maintainable software.</p><div class="project-detail__actions"><a class="btn btn--accent" href="mailto:hello@massoda.me">Email me</a><a class="btn" href="https://calendly.com/emilienmassoda/30-minutes-with-massoda" target="_blank" rel="noopener noreferrer">Schedule a call &#x2197;</a></div></section>
+    </div>
+    <div class="project-detail__nav"><a href="offline-first-sme-operations-suite.html" class="project-detail__nav-link">&#x2190; Previous project</a><a href="mobikumbu.html" class="project-detail__nav-link">Next project &#x2192;</a></div>
+  </div>
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
@@ -206,8 +158,6 @@
       </div>
     </div>
   </footer>
-
-  
 
   <script src="../assets/js/main.js"></script>
 </body>

@@ -1,5 +1,5 @@
 /* ============================================
-   CREATIVE PORTFOLIO — creative.js
+   CREATIVE PORTFOLIO , creative.js
    ============================================ */
 
 (function () {
@@ -26,7 +26,7 @@
     {
       bg: 'media/gallery/jack-buddy-sketch.jpg',
       preh1: 'Animated Series',
-      h1: 'Jack Buddy — Coming Soon',
+      h1: 'Jack Buddy , Coming Soon',
       btnText: 'Read About It',
       btnHref: '#projects',
       external: false
@@ -233,7 +233,7 @@
   }
 
   /* ============================================
-     INTERSECTION OBSERVER — SCROLL REVEALS
+     INTERSECTION OBSERVER , SCROLL REVEALS
      ============================================ */
   function initScrollReveals() {
     var targets = document.querySelectorAll(
@@ -385,7 +385,7 @@
   }
 
   /* ============================================
-     CREATIVE CONTACT FORM — powered by formsubmit.co
+     CREATIVE CONTACT FORM , powered by formsubmit.co
      Delivers to both emilienmassoda@gmail.com and
      jeanemilien.massoda@gmail.com.
      ============================================ */
@@ -448,14 +448,14 @@
         .catch(function () {
           submitBtn.disabled = false;
           submitBtn.textContent = origText;
-          alert('Something went wrong — please try again.');
+          alert('Something went wrong , please try again.');
         });
       });
     });
   }
 
   /* ============================================
-     NEWSLETTER SIGNUP — powered by formsubmit.co
+     NEWSLETTER SIGNUP , powered by formsubmit.co
      ============================================ */
   function initNewsletterForms() {
     var forms = qsa('.cp-newsletter__form');
