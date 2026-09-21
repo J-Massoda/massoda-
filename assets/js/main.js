@@ -408,7 +408,38 @@
   }());
 
   /* ============================================
-     10. CONTACT FORM  — powered by formsubmit.co
+     10. LATEST INSIGHTS CAROUSEL
+     ============================================ */
+  (function () {
+    var carousel = qs('[data-carousel]');
+    if (!carousel) return;
+
+    var previousButton = qs('[data-carousel-prev]');
+    var nextButton = qs('[data-carousel-next]');
+
+    function cardStep() {
+      var card = qs('.insight-card', carousel);
+      if (!card) return carousel.clientWidth;
+      var styles = window.getComputedStyle(carousel);
+      return card.getBoundingClientRect().width + parseFloat(styles.columnGap || styles.gap || 0);
+    }
+
+    function move(direction) {
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      carousel.scrollBy({ left: cardStep() * direction, behavior: reduceMotion ? 'auto' : 'smooth' });
+    }
+
+    if (previousButton) previousButton.addEventListener('click', function () { move(-1); });
+    if (nextButton) nextButton.addEventListener('click', function () { move(1); });
+
+    carousel.addEventListener('keydown', function (event) {
+      if (event.key === 'ArrowLeft') { event.preventDefault(); move(-1); }
+      if (event.key === 'ArrowRight') { event.preventDefault(); move(1); }
+    });
+  }());
+
+  /* ============================================
+     11. CONTACT FORM, powered by formsubmit.co
          Delivers submissions to emilienmassoda@gmail.com.
          First submission sends an activation email to
          that address; click it once and all future
@@ -477,9 +508,10 @@
       .catch(function () {
         submitBtn.disabled = false;
         submitBtn.textContent = origText;
-        alert('Something went wrong — please try again.');
+        alert('Something went wrong. Please try again.');
       });
     });
   }());
 
 })();
+

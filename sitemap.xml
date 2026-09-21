@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://massoda.me/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://massoda.me/portfolio/index.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://massoda.me/portfolio/africa-payment-reconciliation-lab.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://massoda.me/portfolio/ai-agent-security-sandbox.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://massoda.me/portfolio/woocommerce-integration-reliability-kit.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://massoda.me/portfolio/offline-first-sme-operations-suite.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://massoda.me/portfolio/developer-productivity-release-intelligence-hub.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://massoda.me/portfolio/mobikumbu.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://massoda.me/portfolio/freshbox-tech-marketplace.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://massoda.me/portfolio/eth-ai-forecaster.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
@@ -10,8 +15,6 @@
   <url><loc>https://massoda.me/portfolio/phenotyping-flow.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://massoda.me/portfolio/fashionista-africa.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://massoda.me/portfolio/leads-tracker.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://massoda.me/portfolio/agribusiness.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://massoda.me/portfolio/sneaker-shop.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://massoda.me/blog/index.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://massoda.me/blog/when-ai-security-agents-leave-the-sandbox.html</loc><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://massoda.me/blog/autonomous-ai-audit-logs.html</loc><changefreq>monthly</changefreq><priority>0.65</priority></url>
@@ -51,3 +54,4 @@
   <url><loc>https://massoda.me/creative-portfolio/video-ads.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://massoda.me/creative-portfolio/video-editing.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
+

@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="canonical" href="https://massoda.me/portfolio/mobikumbu.html" />
-  <title>Mobi-Kumbu &mdash; Massoda</title>
-  <meta name="description" content="Full-stack build of Mobi-Kumbu, a mobile money and USSD wallet platform serving Angola, South Africa, Mozambique, Brazil, and Papua New Guinea &mdash; mobile app, web dashboard, backend, and AWS infrastructure." />
+  <title>Mobi-Kumbu | Massoda</title>
+  <meta name="description" content="Full-stack build of Mobi-Kumbu, a mobile money and USSD wallet platform serving Angola, South Africa, Mozambique, Brazil, and Papua New Guinea: mobile app, web dashboard, backend, and AWS infrastructure." />
   <link rel="icon" href="../media/favicon.png" type="image/png" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Mobi-Kumbu &mdash; Massoda" />
-  <meta property="og:description" content="Full-stack build of a mobile money and USSD wallet platform &mdash; mobile app, web dashboard, backend, and AWS infrastructure." />
+  <meta property="og:title" content="Mobi-Kumbu | Massoda" />
+  <meta property="og:description" content="Full-stack build of a mobile money and USSD wallet platform: mobile app, web dashboard, backend, and AWS infrastructure." />
   <meta property="og:image" content="../media/mobikumbu-cover.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mobi-Kumbu &mdash; Massoda" />
-  <meta name="twitter:description" content="Full-stack build of a mobile money and USSD wallet platform &mdash; mobile app, web dashboard, backend, and AWS infrastructure." />
+  <meta name="twitter:title" content="Mobi-Kumbu | Massoda" />
+  <meta name="twitter:description" content="Full-stack build of a mobile money and USSD wallet platform: mobile app, web dashboard, backend, and AWS infrastructure." />
   <meta name="twitter:image" content="../media/mobikumbu-cover.jpg" />
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -111,19 +111,38 @@
       <div class="project-detail__section-block fade-in">
         <div class="project-detail__section-label">Overview</div>
         <h2 class="project-detail__section-title">About the Project</h2>
-        <p class="project-detail__section-text">Mobi-Kumbu is a mobile money and financial services platform built for markets where a bank account isn't a given &mdash; serving Angola, South Africa, Mozambique, Brazil, and Papua New Guinea. Users send money, pay bills, and cash out through authorized agents, all from a basic phone or a smartphone. This was a full end-to-end build: the customer mobile app, the USSD channel for feature-phone access, a web-based backend management system, and the AWS infrastructure running all of it &mdash; one of the largest projects of the year.</p>
+        <p class="project-detail__section-text">Mobi-Kumbu is a mobile money and financial services platform built for markets where a bank account isn't a given, serving Angola, South Africa, Mozambique, Brazil, and Papua New Guinea. Users send money, pay bills, and cash out through authorized agents, all from a basic phone or a smartphone. This was a full end-to-end build: the customer mobile app, the USSD channel for feature-phone access, a web-based backend management system, and the AWS infrastructure running all of it, one of the largest projects of the year.</p>
       </div>
 
       <div class="project-detail__section-block fade-in">
         <div class="project-detail__section-label">Challenge</div>
         <h2 class="project-detail__section-title">The Problem</h2>
-        <p class="project-detail__section-text">Mobile money only works if it works for everyone &mdash; including users without smartphones or reliable data. That meant building two parallel access paths, USSD and a full mobile app, both reading and writing against the same wallet state without conflicts. On top of that, the backend had to give administrators real operational control: balances, agent cash-out approvals, transaction monitoring, and account management, all in real time, across multiple countries and currencies.</p>
+        <p class="project-detail__section-text">Mobile money only works if it works for everyone, including users without smartphones or reliable data. That meant building two parallel access paths, USSD and a full mobile app, both reading and writing against the same wallet state without conflicts. On top of that, the backend had to give administrators real operational control: balances, agent cash-out approvals, transaction monitoring, and account management, all in real time, across multiple countries and currencies.</p>
       </div>
 
       <div class="project-detail__section-block fade-in">
         <div class="project-detail__section-label">Solution</div>
         <h2 class="project-detail__section-title">The Approach</h2>
-        <p class="project-detail__section-text">Architected the full stack around a shared wallet backend: the USSD gateway and the mobile app both talk to the same transaction and balance system, so a top-up or transfer is instantly consistent no matter which channel a user came from. Built the admin-facing web application for the operations side &mdash; agent management, transaction oversight, and account administration &mdash; and deployed the entire system on AWS for reliability at scale across five countries. The customer mobile app is live on Google Play, handling balance checks, transfers, agent cash-out, and full transaction history.</p>
+        <p class="project-detail__section-text">Architected the full stack around a shared wallet backend: the USSD gateway and the mobile app both talk to the same transaction and balance system, so a top-up or transfer is instantly consistent no matter which channel a user came from. Built the admin-facing web application for the operations side, agent management, transaction oversight, and account administration, and deployed the entire system on AWS for reliability at scale across five countries. The customer mobile app is live on Google Play, handling balance checks, transfers, agent cash-out, and full transaction history.</p>
+      </div>
+
+      <div class="project-detail__section-block fade-in case-study__evidence">
+        <div class="project-detail__section-label">Role and scope</div>
+        <h2 class="project-detail__section-title">What I owned</h2>
+        <p class="project-detail__section-text">Full-stack and mobile application development across the customer application, USSD access channel, administrative tooling and cloud deployment.</p>
+      </div>
+
+      <div class="project-detail__section-block fade-in">
+        <div class="project-detail__section-label">Engineering focus</div>
+        <h2 class="project-detail__section-title">How the work creates value</h2>
+        <p class="project-detail__section-text">A shared wallet state supports smartphone and feature-phone users while operational teams manage transactions, accounts and agent cash-out workflows.</p>
+        <div class="technology-list"><span class="technology-pill">Mobile application</span><span class="technology-pill">USSD</span><span class="technology-pill">REST APIs</span><span class="technology-pill">AWS</span><span class="technology-pill">Financial workflows</span></div>
+      </div>
+
+      <div class="project-detail__section-block fade-in">
+        <div class="project-detail__section-label">Evidence and boundaries</div>
+        <h2 class="project-detail__section-title">What this case study proves</h2>
+        <p class="project-detail__section-text">The platform is live, with the customer application available on Google Play. Proprietary implementation details and customer data are intentionally excluded from this public case study.</p>
       </div>
 
       <div class="project-detail__section-block fade-in">
@@ -137,7 +156,7 @@
 
     <!-- PROJECT NAV -->
     <div class="project-detail__nav">
-      <a href="sneaker-shop.html" class="project-detail__nav-link">&#x2190; Previous project</a>
+      <a href="developer-productivity-release-intelligence-hub.html" class="project-detail__nav-link">&#x2190; Previous project</a>
       <a href="freshbox-tech-marketplace.html" class="project-detail__nav-link">Next project &#x2192;</a>
     </div>
   </div>
