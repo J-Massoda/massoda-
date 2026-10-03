@@ -1,44 +1,12 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="canonical" href="https://massoda.me/portfolio/mobikumbu.html" />
-  <title>Mobi-Kumbu | Massoda</title>
-  <meta name="description" content="My contribution to Mobi-Kumbu, a mobile money project: early USSD banking prototype, later USSD channel, backend and frontend work, and short-code integration in a collaborative system." />
-  <link rel="icon" href="../media/favicon.png" type="image/png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Mobi-Kumbu | Massoda" />
-  <meta property="og:description" content="My USSD and integration contribution to a collaborative mobile money platform." />
-  <meta property="og:image" content="../media/mobikumbu-cover.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mobi-Kumbu | Massoda" />
-  <meta name="twitter:description" content="My USSD and integration contribution to a collaborative mobile money platform." />
-  <meta name="twitter:image" content="../media/mobikumbu-cover.jpg" />
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CreativeWork",
-  "name": "Mobi-Kumbu",
-  "description": "USSD experience and integration work for a collaborative mobile money platform.",
-  "url": "https://massoda.me/portfolio/mobikumbu.html",
-  "image": "https://massoda.me/media/mobikumbu-cover.jpg",
-  "keywords": "fintech, mobile money, USSD, AWS, mobile application development, wallet platform",
-  "author": {
-    "@type": "Person",
-    "name": "Emilien Massoda",
-    "url": "https://massoda.me/"
-  }
-}
-  </script>
-</head>
-<body>
-
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://massoda.me/portfolio/bridgegate.html" /><title>BridgeGate | Business Software Case Study | Massoda</title>
+<meta name="description" content="BridgeGate: Make a failed system handoff visible and recoverable. Explore a realistic scenario, working scope, technology, source code and browser walkthrough." /><link rel="icon" href="../media/favicon.png" type="image/png" />
+<meta property="og:type" content="article" /><meta property="og:title" content="BridgeGate | Massoda" /><meta property="og:description" content="BridgeGate: Make a failed system handoff visible and recoverable. Explore a realistic scenario, working scope, technology, source code and browser walkthrough." /><meta property="og:url" content="https://massoda.me/portfolio/bridgegate.html" /><meta property="og:image" content="https://massoda.me/media/bridgegate-cover.svg" />
+<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="BridgeGate | Massoda" /><meta name="twitter:description" content="BridgeGate: Make a failed system handoff visible and recoverable. Explore a realistic scenario, working scope, technology, source code and browser walkthrough." /><meta name="twitter:image" content="https://massoda.me/media/bridgegate-cover.svg" />
+<link rel="stylesheet" href="../assets/css/main.css" /><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" /><link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"BridgeGate","description":"BridgeGate: Make a failed system handoff visible and recoverable. Explore a realistic scenario, working scope, technology, source code and browser walkthrough.","url":"https://massoda.me/portfolio/bridgegate.html","codeRepository":"https://github.com/J-Massoda/bridgegate","author":{"@type":"Person","name":"Jean Emilien Massoda","url":"https://massoda.me/"}}</script></head><body>
   <!-- NAVBAR -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
@@ -87,80 +55,22 @@
     <a href="https://calendly.com/emilienmassoda/30-minutes-with-massoda" target="_blank" rel="noopener noreferrer" class="btn">Schedule a call</a>
   </div>
 
-  <!-- PROJECT HERO -->
-  <div class="project-detail__hero">
-    <div class="container">
-      <a href="index.html" class="page-hero__back">&#x2190; All projects</a>
-      <span class="project-detail__tag">Mobile Application Development</span>
-      <h1 class="project-detail__title fade-in">Mobi&#8209;Kumbu</h1>
-      <a href="https://mobikumbu.com" target="_blank" rel="noopener noreferrer" class="btn btn--accent" style="margin-bottom:2.5rem;">View live project &#x2197;</a>
-    </div>
-  </div>
 
-  <!-- HERO IMAGE -->
-  <div class="container">
-    <div class="project-detail__image-hero fade-in">
-      <img src="../media/mobikumbu-cover.jpg" alt="Mobi-Kumbu mobile money and USSD wallet platform homepage" />
-    </div>
-  </div>
 
-  <!-- CONTENT SECTIONS -->
-  <div class="container">
-    <div class="project-detail__sections">
-
-      <div class="project-detail__section-block fade-in">
-        <div class="project-detail__section-label">Overview</div>
-        <h2 class="project-detail__section-title">About the Project</h2>
-        <p class="project-detail__section-text">Mobi-Kumbu is a mobile money project with a USSD channel for feature-phone access and a wider application and service platform. I first built an independent all-in-one USSD banking MVP to demonstrate the concept. The later implementation became a collaborative system with separate responsibilities. This case study describes my role and the product context without publishing client-owned source code.</p>
-      </div>
-
-      <div class="project-detail__section-block fade-in">
-        <div class="project-detail__section-label">Challenge</div>
-        <h2 class="project-detail__section-title">The Problem</h2>
-        <p class="project-detail__section-text">Mobile money access can be difficult for people with feature phones or unreliable mobile data. A USSD interaction has to remain short, clear and dependable while coordinating with the wider product. The engineering challenge was connecting that channel to the platform and handling the boundaries between a user session, service responses and short-code integration.</p>
-      </div>
-
-      <div class="project-detail__section-block fade-in">
-        <div class="project-detail__section-label">Solution</div>
-        <h2 class="project-detail__section-title">The Approach</h2>
-        <p class="project-detail__section-text">The early prototype combined USSD and banking concepts in one application to establish a working direction. In the later collaborative implementation, I worked on the USSD experience and its related frontend, backend and short-code integration. Another developer handled the wallet and banking components. The integration required clear handoffs between those parts of the system.</p>
-      </div>
-
-      <div class="project-detail__section-block fade-in case-study__evidence">
-        <div class="project-detail__section-label">Role and scope</div>
-        <h2 class="project-detail__section-title">What I owned</h2>
-        <p class="project-detail__section-text">I developed the initial independent USSD banking MVP and later owned the USSD channel work, including its backend, frontend and short-code integration. A second developer owned the wallet and banking components of the collaborative implementation.</p>
-      </div>
-
-      <div class="project-detail__section-block fade-in">
-        <div class="project-detail__section-label">Engineering focus</div>
-        <h2 class="project-detail__section-title">How the work creates value</h2>
-        <p class="project-detail__section-text">A usable USSD flow can extend access to people without a smartphone or reliable data connection. My work focused on the user-facing session and the technical integration needed to connect it with the wider product.</p>
-        <div class="technology-list"><span class="technology-pill">Mobile application</span><span class="technology-pill">USSD</span><span class="technology-pill">REST APIs</span><span class="technology-pill">AWS</span><span class="technology-pill">Financial workflows</span></div>
-      </div>
-
-      <div class="project-detail__section-block fade-in">
-        <div class="project-detail__section-label">Evidence and boundaries</div>
-        <h2 class="project-detail__section-title">What this case study proves</h2>
-        <p class="project-detail__section-text">The public website and app listing provide product context. This case study records my contribution; the production repositories and client-owned source are private. The earlier all-in-one prototype is separate from the later collaborative implementation.</p>
-      </div>
-
-      <div class="project-detail__section-block fade-in">
-        <div class="project-detail__section-label">Preview</div>
-        <h2 class="project-detail__section-title">Project Screenshots</h2>
-        <img src="../media/mobikumbu-cover.jpg" alt="Mobi-Kumbu homepage" style="border-radius:0.75rem; width:100%; margin-bottom:1rem;" />
-        <div class="preview-note">More app and dashboard screenshots coming soon. The app is available now on <a href="https://play.google.com/store/apps/details?id=com.mobikumbu.customer&hl=en" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">Google Play</a>.</div>
-      </div>
-
-    </div>
-
-    <!-- PROJECT NAV -->
-    <div class="project-detail__nav">
-      <a href="developer-productivity-release-intelligence-hub.html" class="project-detail__nav-link">&#x2190; Previous project</a>
-      <a href="freshbox-tech-marketplace.html" class="project-detail__nav-link">Next project &#x2192;</a>
-    </div>
-  </div>
-
+<div class="project-detail__hero"><div class="container"><a href="index.html" class="page-hero__back">&#x2190; All projects</a><span class="project-detail__tag">Node.js / Integration Gateway</span><h1 class="project-detail__title fade-in">BridgeGate</h1><p class="project-detail__lead">Make a failed system handoff visible and recoverable.</p><div class="project-detail__actions"><a href="https://j-massoda.github.io/bridgegate/" target="_blank" rel="noopener noreferrer" class="btn btn--accent">Explore visual walkthrough &#x2197;</a><a href="https://github.com/J-Massoda/bridgegate" target="_blank" rel="noopener noreferrer" class="btn">View source code &#x2197;</a></div></div></div>
+<div class="container"><div class="project-detail__image-hero fade-in"><img src="../media/bridgegate-cover.svg" alt="Concept illustration of BridgeGate workflow; no live customer data" /></div>
+<dl class="project-facts fade-in"><div><dt>Project</dt><dd>BridgeGate</dd></div><div><dt>Audience</dt><dd>Product teams and businesses connecting stores, CRMs and internal services</dd></div><div><dt>Type</dt><dd>Independent working prototype</dd></div><div><dt>Evidence</dt><dd>Repository, documentation and tests</dd></div></dl>
+<div class="project-detail__sections">
+<section class="project-detail__section-block fade-in"><div class="project-detail__section-label">The business problem</div><h2 class="project-detail__section-title">Where work gets stuck</h2><p class="project-detail__section-text">An integration can say it sent an update while the receiving system never acted, leaving two teams with conflicting records.</p><p class="project-detail__section-text">This project is for product teams and businesses connecting stores, crms and internal services. The aim is to make the next decision visible to the people doing the work.</p></section>
+<section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Everyday example</div><h2 class="project-detail__section-title">What a team might do</h2><p class="project-detail__section-text">A store sends an order update to an operations service. The receiver fails once and accepts a later signed retry. The gateway records the attempt and returns the stored result when an identical request is repeated. Staff can inspect a redacted audit trail rather than assume the handoff worked.</p></section>
+<section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Working scope</div><h2 class="project-detail__section-title">What the prototype does</h2><ul class="case-study__list"><li>Authenticated intake and configured destination</li><li>Temporary-failure retries and idempotent request handling</li><li>SQLite audit history and signed delivery</li></ul></section>
+<section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Engineering evidence</div><h2 class="project-detail__section-title">What I built and tested</h2><p class="project-detail__section-text">I designed and implemented this independent prototype to explore the business workflow and its technical constraints. Node.js, TypeScript, SQLite, authentication, rate limiting, failure handling and tests. The repository explains how to run its real implementation and tests.</p></section>
+<section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Try it</div><h2 class="project-detail__section-title">Explore the demo and the code</h2><p class="project-detail__section-text">Open the fictional browser walkthrough to understand the workflow. Read the source and README for installation, local testing and implementation details. The browser page does not run the backend service.</p></section>
+<section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Current boundaries</div><h2 class="project-detail__section-title">What this version does not claim</h2><div class="case-study__notice"><p>The Pages page is a fictional walkthrough. The real gateway is a local prototype, and the receiver must still deduplicate retries. No customer outcomes have been measured for this independent demonstration.</p></div></section>
+<section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Free guided test</div><h2 class="project-detail__section-title">Could this fit your team?</h2><p class="project-detail__section-text">Choose one fragile handoff, then test a temporary receiver failure with fictional events and inspect the evidence needed by operators. There is no fee or obligation to adopt a product. Any work involving real data or a production deployment would need a separate scope and appropriate safeguards.</p></section>
+<section class="project-detail__section-block fade-in"><div class="project-detail__section-label">Technology</div><h2 class="project-detail__section-title">Tools and skills</h2><div class="technology-list"><span class="technology-pill">Node.js</span><span class="technology-pill">TypeScript</span><span class="technology-pill">SQLite</span><span class="technology-pill">Integrations</span></div></section>
+<section class="case-study-cta fade-in"><p class="project-detail__section-label">Work with me</p><h2>Which two systems leave your team unsure whether an update arrived?</h2><p>Tell me how your workflow currently works. We can explore a small guided pilot or discuss a software system tailored to your organization.</p><div class="project-detail__actions"><a class="btn btn--accent" href="mailto:hello@massoda.me?subject=BridgeGate%20workflow%20conversation">Describe your workflow &#x2197;</a><a class="btn" href="../work-with-me.html">See ways to work together &#x2197;</a></div></section>
+</div><div class="project-detail__nav"><a href="index.html" class="project-detail__nav-link">&#x2190; Engineering portfolio</a><a href="../business-systems-lab/index.html" class="project-detail__nav-link">Explore the Business Systems Lab &#x2192;</a></div></div>
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">

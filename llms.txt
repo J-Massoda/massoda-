@@ -1,8 +1,12 @@
 # Massoda
 
-> Emilien Massoda is a frontend developer & designer with 7+ years of experience building interactive web, mobile, and e-commerce experiences. Available for freelance and contract work.
+> Jean Emilien Massoda builds business software, product prototypes, integrations and operational tools across Go, Python, PHP/WordPress, React and TypeScript. Available for remote engineering roles, freelance and contract work.
 
-Massoda specializes in frontend engineering (React, Next.js, WordPress/WooCommerce), UI/UX design, interaction & motion design, mobile application development, web application development, and data analytics. A separate creative practice covers illustration, logo animation, and motion design under the Fauxverse studio.
+The engineering portfolio includes backend services, WordPress and WooCommerce plugins, operations consoles, APIs, integrations and frontend systems. The Business Systems Lab presents five product experiments and free guided pilots. Each case study distinguishes a browser demo from a locally run service or plugin. A separate creative practice covers illustration, logo animation and motion design.
+
+## Work with me
+
+- [Business software and engineering offers](https://massoda.me/work-with-me.html): Operational workflows, WordPress and WooCommerce plugins, APIs, integrations, guided prototypes and remote engineering roles.
 
 ## Services
 
@@ -40,3 +44,12 @@ Massoda specializes in frontend engineering (React, Next.js, WordPress/WooCommer
 - [Schedule a call](https://calendly.com/emilienmassoda/30-minutes-with-massoda)
 - [LinkedIn](https://www.linkedin.com/in/jean-emilien-l-59b7061a9)
 - [GitHub](https://github.com/J-Massoda)
+
+## Recent engineering prototypes
+
+- [EventFlow Go](https://massoda.me/portfolio/eventflow-go.html): When an order changes, the next system needs the update even if it is temporarily unavailable.
+- [IntakeDesk](https://massoda.me/portfolio/intakedesk.html): Make it easier to see where every new enquiry stands before work begins.
+- [VendorPulse](https://massoda.me/portfolio/vendorpulse.html): Give slow and stuck orders a clear human follow-up instead of another forgotten dashboard number.
+- [PacketLens](https://massoda.me/portfolio/packetlens.html): See which required documents arrived, which still need review, and why a packet is not ready.
+- [SignalDesk](https://massoda.me/portfolio/signaldesk.html): Put exceptions from separate workflows into one place with an owner and a next action.
+- [BridgeGate](https://massoda.me/portfolio/bridgegate.html): Make a failed system handoff visible and recoverable.
