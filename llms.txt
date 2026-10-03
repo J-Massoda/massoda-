@@ -53,3 +53,5 @@ The engineering portfolio includes backend services, WordPress and WooCommerce p
 - [PacketLens](https://massoda.me/portfolio/packetlens.html): See which required documents arrived, which still need review, and why a packet is not ready.
 - [SignalDesk](https://massoda.me/portfolio/signaldesk.html): Put exceptions from separate workflows into one place with an owner and a next action.
 - [BridgeGate](https://massoda.me/portfolio/bridgegate.html): Make a failed system handoff visible and recoverable.
+
+- [Afremit venture pilot](https://massoda.me/portfolio/afremit.html): Co-founded education-first provider and payer workflow with simulated release conditions, evidence, independent review, and public source. No live funds or escrow custody.
