@@ -85,38 +85,6 @@
   }
 
   /* ============================================
-     3. HIRE ME DROPDOWN
-     ============================================ */
-  const dropdown = qs('.navbar__dropdown');
-
-  if (dropdown) {
-    const toggle = qs('.navbar__dropdown-toggle', dropdown);
-    const menu = qs('.navbar__dropdown-menu', dropdown);
-
-    toggle.addEventListener('click', function (e) {
-      e.stopPropagation();
-      dropdown.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(dropdown.classList.contains('open')));
-    });
-
-    // Close when clicking outside
-    document.addEventListener('click', function (e) {
-      if (!dropdown.contains(e.target)) {
-        dropdown.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-
-    // Close on Escape
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
-        dropdown.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-  }
-
-  /* ============================================
      4. SMOOTH SCROLL for anchor links
      ============================================ */
   document.addEventListener('click', function (e) {
