@@ -1,17 +1,17 @@
 # Massoda
 
-> Jean Emilien Massoda builds business software, product prototypes, integrations and operational tools across Go, Python, PHP/WordPress, React and TypeScript. Available for remote engineering roles, freelance and contract work.
+> Jean Emilien Massoda is a software engineer and product builder working across TypeScript, JavaScript, Go, Python, PHP and SQL. Available for remote full-time roles, contract engineering and early-stage product teams.
 
-The engineering portfolio includes backend services, WordPress and WooCommerce plugins, operations consoles, APIs, integrations and frontend systems. The Business Systems Lab presents five product experiments and free guided pilots. Each case study distinguishes a browser demo from a locally run service or plugin. A separate creative practice covers illustration, logo animation and motion design.
+The engineering portfolio includes backend services, WordPress and WooCommerce plugins, operations consoles, APIs, integrations and frontend systems. The Business Systems Lab presents eight product experiments and free guided pilots. Each case study distinguishes a browser demo from a locally run service or plugin. A separate creative practice covers illustration, logo animation and motion design.
 
 ## Work with me
 
-- [Business software and engineering offers](https://massoda.me/work-with-me.html): Operational workflows, WordPress and WooCommerce plugins, APIs, integrations, guided prototypes and remote engineering roles.
+- [Engineering roles, early-stage teams and scoped builds](https://massoda.me/work-with-me.html): Remote full-time and contract roles, product engineering, APIs, integrations, WordPress and WooCommerce plugins, and free guided pilots. Based in UTC+1; working schedule can align with UK, European, North American or Australian teams by agreement.
+- Languages: TypeScript, JavaScript, Go, Python, PHP and SQL. Tools include React, Node.js, WordPress, WooCommerce, PostgreSQL, SQLite, REST APIs and cloud deployment.
 
 ## Services
 
 - [UI/UX Design](https://massoda.me/services/web-design.html): User-centred design, wireframes, prototypes, and design systems.
-- [Interaction & Motion Design](https://massoda.me/services/interaction-design.html): Micro-interactions, scroll-driven animation, transition systems.
 - [Frontend Engineering](https://massoda.me/services/web-development.html): Production frontend development, Core Web Vitals, accessibility, component architecture.
 - [Mobile Application Development](https://massoda.me/services/mobile-application.html): Cross-platform mobile engineering with React Native and Flutter.
 - [Web Application Development](https://massoda.me/services/web-application.html): Scalable SaaS and enterprise web application frontend engineering.
@@ -22,14 +22,10 @@ The engineering portfolio includes backend services, WordPress and WooCommerce p
 
 - [Mobi-Kumbu](https://massoda.me/portfolio/mobikumbu.html): Full-stack mobile money and USSD wallet platform — mobile app, web dashboard, backend, and AWS infrastructure, serving five countries.
 - [FreshBox Tech Marketplace](https://massoda.me/portfolio/freshbox-tech-marketplace.html): Multi-vendor B2B marketplace built on WooCommerce and WCFM with a custom mega-menu system.
-- [Residences Loumia](https://massoda.me/portfolio/residences-loumia.html): UI/UX design and GSAP interaction work for a multi-property luxury hospitality platform.
 - [Bpétale](https://massoda.me/portfolio/bpetale-ltd.html): Multi-brand WordPress/Elementor design system spanning Natural Essence skincare, Travels & Tours, and Krunchies.
 - [Eth AI Forecaster](https://massoda.me/portfolio/eth-ai-forecaster.html): Python/Jupyter machine learning project forecasting Ethereum price movement from historical data.
-- [Phenotyping Flow](https://massoda.me/portfolio/phenotyping-flow.html): Interaction design for a hospital/lab hardware control interface, designed in Figma.
 - [Fashionista Africa](https://massoda.me/portfolio/fashionista-africa.html): WordPress build for an African fashion brand.
 - [Leads Tracker](https://massoda.me/portfolio/leads-tracker.html): Chrome Extension for saving URLs to revisit later.
-- [Agribusiness](https://massoda.me/portfolio/agribusiness.html): In-progress frontend for an affiliate agri-business marketplace.
-- [Sneaker Shop](https://massoda.me/portfolio/sneaker-shop.html): Responsive single-page landing design concept.
 
 ## Creative Portfolio
 
@@ -55,3 +51,9 @@ The engineering portfolio includes backend services, WordPress and WooCommerce p
 - [BridgeGate](https://massoda.me/portfolio/bridgegate.html): Make a failed system handoff visible and recoverable.
 
 - [Afremit venture pilot](https://massoda.me/portfolio/afremit.html): Co-founded education-first provider and payer workflow with simulated release conditions, evidence, independent review, and public source. No live funds or escrow custody.
+
+## Business Systems Lab working demos
+
+- [ChangeMap](https://massoda.me/business-systems-lab/changemap.html): Map an approved decision across affected channels, assign owners and record version-specific verification. [Demo](https://j-massoda.github.io/changemap/) · [Source](https://github.com/J-Massoda/changemap).
+- [SourceCheck](https://massoda.me/business-systems-lab/sourcecheck.html): Compare two CSV snapshots and review discrepancies without modifying source records. [Demo](https://j-massoda.github.io/sourcecheck/) · [Source](https://github.com/J-Massoda/sourcecheck).
+- [WorkflowFit](https://massoda.me/business-systems-lab/workflowfit.html): Compare fictional baseline and pilot case timelines and define a fair process test. [Demo](https://j-massoda.github.io/workflowfit/) · [Source](https://github.com/J-Massoda/workflowfit).
