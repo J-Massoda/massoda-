@@ -22,7 +22,8 @@ The engineering portfolio includes backend services, WordPress and WooCommerce p
 
 - [Mobi-Kumbu](https://massoda.me/portfolio/mobikumbu.html): Full-stack mobile money and USSD wallet platform — mobile app, web dashboard, backend, and AWS infrastructure, serving five countries.
 - [FreshBox Tech Marketplace](https://massoda.me/portfolio/freshbox-tech-marketplace.html): Multi-vendor B2B marketplace built on WooCommerce and WCFM with a custom mega-menu system.
-- [Bpétale](https://massoda.me/portfolio/bpetale-ltd.html): Multi-brand WordPress/Elementor design system spanning Natural Essence skincare, Travels & Tours, and Krunchies.
+- [BPÉTALE](https://massoda.me/portfolio/bpetale-ltd.html): Multi-brand WordPress and WooCommerce case study with versioned storefront, travel and staff inventory workflows.
+- [Deux Rives Web](https://massoda.me/portfolio/deux-rives-web.html): French software company co-founded by Massoda, with a public French-language website preview and workflow prototypes.
 - [Eth AI Forecaster](https://massoda.me/portfolio/eth-ai-forecaster.html): Python/Jupyter machine learning project forecasting Ethereum price movement from historical data.
 - [Fashionista Africa](https://massoda.me/portfolio/fashionista-africa.html): WordPress build for an African fashion brand.
 - [Leads Tracker](https://massoda.me/portfolio/leads-tracker.html): Chrome Extension for saving URLs to revisit later.
@@ -34,6 +35,7 @@ The engineering portfolio includes backend services, WordPress and WooCommerce p
 ## Blog
 
 - [Blog](https://massoda.me/blog/index.html): Industry analysis and technical writing on AI infrastructure, cloud computing, AWS, and DevOps trends.
+- [The AI Race Is Becoming a Race for Electricity](https://massoda.me/blog/the-ai-race-for-electricity.html): A Massoda Technology Insights article on data center power demand, local grid planning and AI product decisions.
 
 ## Contact
 
