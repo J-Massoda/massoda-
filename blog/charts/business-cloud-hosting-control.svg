@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="396pt" viewBox="0 0 720 396" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>Availability targets in a 30-day month</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Availability targets in a 30-day month</dc:title>
+    <dc:description>Minutes = 43,200 × (1 − availability fraction). This is time-based target arithmetic, following Google SRE, not observed outages, a provider SLA, or a prediction. Contractual exclusions and real service measurements may differ.</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 396 
+L 720 396 
+L 720 0 
+L 0 0 
+z
+" style="fill: #111820"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 266.4 304.92 
+L 655.2 304.92 
+L 655.2 87.12 
+L 266.4 87.12 
+z
+" style="fill: #111820"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 266.4 304.92 
+L 266.4 87.12 
+" clip-path="url(#p647f1bc6c8)" style="fill: none; stroke: #394655; stroke-opacity: 0.65; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b8c4d2" x="266.4" y="325.557813" transform="rotate(-0 266.4 325.557813)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 344.16 304.92 
+L 344.16 87.12 
+" clip-path="url(#p647f1bc6c8)" style="fill: none; stroke: #394655; stroke-opacity: 0.65; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b8c4d2" x="344.16" y="325.557813" transform="rotate(-0 344.16 325.557813)">10</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 421.92 304.92 
+L 421.92 87.12 
+" clip-path="url(#p647f1bc6c8)" style="fill: none; stroke: #394655; stroke-opacity: 0.65; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b8c4d2" x="421.92" y="325.557813" transform="rotate(-0 421.92 325.557813)">20</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 499.68 304.92 
+L 499.68 87.12 
+" clip-path="url(#p647f1bc6c8)" style="fill: none; stroke: #394655; stroke-opacity: 0.65; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b8c4d2" x="499.68" y="325.557813" transform="rotate(-0 499.68 325.557813)">30</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 577.44 304.92 
+L 577.44 87.12 
+" clip-path="url(#p647f1bc6c8)" style="fill: none; stroke: #394655; stroke-opacity: 0.65; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b8c4d2" x="577.44" y="325.557813" transform="rotate(-0 577.44 325.557813)">40</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 655.2 304.92 
+L 655.2 87.12 
+" clip-path="url(#p647f1bc6c8)" style="fill: none; stroke: #394655; stroke-opacity: 0.65; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12"/>
+     <g id="text_6">
+      <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b8c4d2" x="655.2" y="325.557813" transform="rotate(-0 655.2 325.557813)">50</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #e8edf4" x="460.8" y="352.827656" transform="rotate(-0 460.8 352.827656)">Calculated unavailability allowance (minutes)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_13"/>
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #e8edf4" x="256.4" y="120.091258" transform="rotate(-0 256.4 120.091258)">99.9% availability</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_14"/>
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #e8edf4" x="256.4" y="200.579062" transform="rotate(-0 256.4 200.579062)">99.95% availability</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_15"/>
+     <g id="text_10">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #e8edf4" x="256.4" y="281.066867" transform="rotate(-0 256.4 281.066867)">99.99% availability</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 266.4 97.02 
+L 602.3232 97.02 
+L 602.3232 134.04439 
+L 266.4 134.04439 
+z
+" clip-path="url(#p647f1bc6c8)" style="fill: #69baff"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 266.4 177.507805 
+L 434.3616 177.507805 
+L 434.3616 214.532195 
+L 266.4 214.532195 
+z
+" clip-path="url(#p647f1bc6c8)" style="fill: #63d6bf"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 266.4 257.99561 
+L 299.99232 257.99561 
+L 299.99232 295.02 
+L 266.4 295.02 
+z
+" clip-path="url(#p647f1bc6c8)" style="fill: #d5bc82"/>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #e8edf4" x="609.3216" y="119.119383" transform="rotate(-0 609.3216 119.119383)">43.2 min</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #e8edf4" x="441.36" y="199.607187" transform="rotate(-0 441.36 199.607187)">21.6 min</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #e8edf4" x="306.99072" y="280.094992" transform="rotate(-0 306.99072 280.094992)">4.32 min</text>
+   </g>
+  </g>
+  <g id="text_14">
+   <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #e8edf4" x="28.8" y="31.9575" transform="rotate(-0 28.8 31.9575)">Availability targets in a 30-day month</text>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b8c4d2" x="28.8" y="370.26" transform="rotate(-0 28.8 370.26)">Calculated illustration; 30 days = 43,200 minutes</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b8c4d2" x="28.8" y="386.1" transform="rotate(-0 28.8 386.1)">Source: Google SRE: Availability Table</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p647f1bc6c8">
+   <rect x="266.4" y="87.12" width="388.8" height="217.8"/>
+  </clipPath>
+ </defs>
+</svg>

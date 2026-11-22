@@ -1,0 +1,149 @@
+{
+  "description": "Reproducible chart values, units, source URLs, periods, and interpretation. Calculated illustrations are explicitly identified.",
+  "charts": [
+    {
+      "article": "https://massoda.me/blog/enterprise-ai-agents-business-software.html",
+      "title": "Agentic AI: experimentation and scaling",
+      "labels": [
+        "Experimenting",
+        "Scaling in at least one function"
+      ],
+      "values": [
+        39,
+        23
+      ],
+      "unit": "Share of survey respondents (%)",
+      "max": 50,
+      "source": "mckinsey",
+      "period": "Survey: 25 June–29 July 2025",
+      "method": "Reported organizational adoption; 1,993 respondents in 105 nations, GDP-weighted. Scaling means at least one function, not enterprise-wide deployment. Historical self-reported survey data; not a 2026 adoption estimate.",
+      "source_name": "McKinsey, State of AI 2025: survey and methodology",
+      "source_url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2025",
+      "reviewed": "2026-11-22"
+    },
+    {
+      "article": "https://massoda.me/blog/business-cloud-hosting-control.html",
+      "title": "Availability targets in a 30-day month",
+      "labels": [
+        "99.9% availability",
+        "99.95% availability",
+        "99.99% availability"
+      ],
+      "values": [
+        43.2,
+        21.6,
+        4.32
+      ],
+      "unit": "Calculated unavailability allowance (minutes)",
+      "max": 50,
+      "source": "availability",
+      "period": "Calculated illustration; 30 days = 43,200 minutes",
+      "method": "Minutes = 43,200 × (1 − availability fraction). This is time-based target arithmetic, following Google SRE, not observed outages, a provider SLA, or a prediction. Contractual exclusions and real service measurements may differ.",
+      "source_name": "Google SRE: Availability Table",
+      "source_url": "https://sre.google/sre-book/availability-table/",
+      "reviewed": "2026-11-22"
+    },
+    {
+      "article": "https://massoda.me/blog/website-software-supply-chain-security.html",
+      "title": "Third-party involvement in reported breaches",
+      "labels": [
+        "Prior report comparison",
+        "2025 DBIR"
+      ],
+      "values": [
+        15,
+        30
+      ],
+      "unit": "Reported share of breaches (%)",
+      "max": 40,
+      "source": "dbirchart",
+      "period": "Verizon 2025 DBIR comparison with prior report",
+      "method": "Verizon reports roughly 15% previously and 30% in the 2025 edition. Third parties cover broader supplier relationships, not only website plugins. Different report incident sets; not an individual website’s probability of compromise.",
+      "source_name": "Verizon: 2025 DBIR infographic",
+      "source_url": "https://www.verizon.com/business/resources/infographics/2025-dbir-infographic.pdf",
+      "reviewed": "2026-11-22"
+    },
+    {
+      "article": "https://massoda.me/blog/ai-search-seo-customer-discovery.html",
+      "title": "Traditional Google result clicks in Pew’s sample",
+      "labels": [
+        "Without an AI summary",
+        "With an AI summary"
+      ],
+      "values": [
+        15,
+        8
+      ],
+      "unit": "Visits followed by a traditional result click (%)",
+      "max": 20,
+      "source": "pew",
+      "period": "US browsing: March 2025; results reconstructed in April",
+      "method": "900 US adults; 68,879 unique Google searches. Search results were reconstructed 7–17 April 2025. The comparison is observational, not a causal estimate of traffic loss or revenue impact.",
+      "source_name": "Pew Research Center: Google AI summaries, 22 July 2025",
+      "source_url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+      "reviewed": "2026-11-22"
+    },
+    {
+      "article": "https://massoda.me/blog/website-accessibility-wcag-customer-journeys.html",
+      "title": "Common detected homepage accessibility barriers",
+      "labels": [
+        "Low-contrast text",
+        "Missing image alternatives",
+        "Missing form labels"
+      ],
+      "values": [
+        79.1,
+        55.5,
+        48.2
+      ],
+      "unit": "Sampled homepages with the detected issue (%)",
+      "max": 100,
+      "source": "webaim",
+      "period": "WebAIM Million: February 2025",
+      "method": "Automated WAVE evaluation of one million homepages selected using the Tranco ranking. Issue categories overlap and do not sum to 100%. Automated findings cover only part of accessibility; no detected error does not prove conformance.",
+      "source_name": "WebAIM Million: February 2025 evaluation and methodology",
+      "source_url": "https://webaim.org/projects/million/2025",
+      "reviewed": "2026-11-22"
+    },
+    {
+      "article": "https://massoda.me/blog/website-performance-core-web-vitals-peak-traffic.html",
+      "title": "Conversion improvements reported in a speed study",
+      "labels": [
+        "Retail conversion",
+        "Travel conversion"
+      ],
+      "values": [
+        8.4,
+        10.1
+      ],
+      "unit": "Reported relative improvement (%)",
+      "max": 12,
+      "source": "deloitte",
+      "period": "Deloitte, Milliseconds Make Millions (2020)",
+      "method": "Historical four-week mobile-site study across selected brands in Europe and the US, commissioned by Google. Reported association with a 0.1-second natural site-speed improvement; not percentage points, a causal guarantee, or an LCP/INP forecast.",
+      "source_name": "Deloitte: Milliseconds Make Millions (2020 research)",
+      "source_url": "https://www.deloitte.com/ie/en/services/consulting/research/milliseconds-make-millions.html",
+      "reviewed": "2026-11-22"
+    },
+    {
+      "article": "https://massoda.me/blog/buy-configure-or-build-business-software.html",
+      "title": "Evaluation timelines in two software buyer groups",
+      "labels": [
+        "Successful buyers:\n3 months or less",
+        "Regretful buyers:\n5 months or more"
+      ],
+      "values": [
+        57,
+        54
+      ],
+      "unit": "Respondents within each separately defined group (%)",
+      "max": 70,
+      "source": "capterra",
+      "period": "2025 Tech Trends survey; fieldwork August 2024",
+      "method": "3,500 software purchasers in nine countries. Bars use different buyer groups and different time bands; they are not complementary shares. Observational survey association cannot show that a shorter evaluation causes success. Capterra is a commercial software marketplace.",
+      "source_name": "Capterra: 2025 Tech Trends report and survey methodology",
+      "source_url": "https://www.capterra.com/resources/tech-trends-successful-buyer-purchase-journey/",
+      "reviewed": "2026-11-22"
+    }
+  ]
+}
