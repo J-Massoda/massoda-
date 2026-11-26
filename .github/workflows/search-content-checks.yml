@@ -1,0 +1,32 @@
+name: Search content checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: search-content-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Test sitemap generation and validate coverage
+        run: |
+          python3 -m unittest discover -s tests -v
+          python3 scripts/generate_sitemap.py --check
+      - name: Check article, metadata and linked media
+        run: python3 scripts/check_procreate_article.py
+      - name: Check phone and desktop rendering
+        run: python3 scripts/check_procreate_layout.py
+      - name: Verify published sitemap and article after Pages deployment
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: python3 scripts/verify_search_deployment.py

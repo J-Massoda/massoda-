@@ -114,3 +114,20 @@ Hosted on GitHub Pages with a custom domain (`massoda.me`) via a `CNAME` file at
 ## License
 
 All code in this repository is © Emilien Massoda. Site content, illustrations, and case study material are not licensed for reuse.
+
+### Sitemap publishing checks
+
+The public sitemap remains at `https://massoda.me/sitemap.xml`, as declared in
+`robots.txt`. Before publishing a new HTML page or changing its canonical URL,
+run `python3 scripts/generate_sitemap.py` and commit the updated `sitemap.xml`.
+The generator includes self-canonical, indexable HTML pages, excludes noindex
+and redirect pages, and retains known modification dates. It does not replace
+all dates with the build date. Add `article:modified_time` or `date-modified`
+metadata when content is substantially updated.
+
+Run `python3 scripts/generate_sitemap.py --check` to detect gaps without writing
+files. The Search content checks workflow reports stale sitemap coverage on
+pushes and pull requests. It also checks the Procreate comparison's local
+links, minimum article length and phone/desktop layout, and verifies that the
+public sitemap and article match a main-branch deployment. The workflow does
+not submit URLs to search engines or change the existing Pages configuration.

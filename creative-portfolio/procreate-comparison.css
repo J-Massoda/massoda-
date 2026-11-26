@@ -1,0 +1,30 @@
+/* Reading styles scoped to this long-form comparison; other creative pages retain their layout. */
+.cp-comparison-page .cp-post-content { max-width: 960px; }
+.cp-comparison-page .cp-richtext { overflow-wrap: anywhere; }
+.cp-comparison-page .cp-richtext p,
+.cp-comparison-page .cp-richtext li { font-size: 16px; line-height: 1.9; }
+.cp-comparison-page .cp-richtext h2 { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.3; margin: 3rem 0 1rem; scroll-margin-top: 6rem; }
+.cp-comparison-page .cp-richtext h3 { line-height: 1.4; }
+.cp-comparison-page .cp-richtext a { color: var(--cp-text); text-decoration: underline; text-underline-offset: .22em; }
+.cp-comparison-page .cp-richtext a:hover { color: var(--cp-yellow); }
+.cp-comparison-page .cp-richtext a:focus-visible,
+.cp-comparison-page .cp-comparison-table:focus-visible { outline: 2px solid var(--cp-yellow); outline-offset: 5px; }
+.cp-comparison-page .cp-richtext .cp-comparison-intro { font-size: 18px; }
+.cp-comparison-page .cp-richtext .cp-comparison-note { font-size: 13px; padding: 1rem 1.25rem; border-left: 3px solid var(--cp-yellow); background: rgba(254,224,64,.05); }
+.cp-comparison-contents { border-block: 1px solid rgba(255,255,255,.15); padding: 1.25rem 0; margin: 2rem 0; }
+.cp-comparison-page .cp-comparison-contents ol { margin: 0 0 0 1.25rem; }
+.cp-comparison-page .cp-comparison-contents li { font-size: 14px; }
+.cp-comparison-table { max-width: 100%; overflow-x: auto; margin: 1.5rem 0; }
+.cp-comparison-table table { width: 100%; min-width: 540px; border-collapse: collapse; text-align: left; font-size: 14px; line-height: 1.6; }
+.cp-comparison-table caption { text-align: left; font-weight: 700; padding-bottom: .75rem; }
+.cp-comparison-table th, .cp-comparison-table td { border: 1px solid rgba(255,255,255,.18); padding: .8rem; vertical-align: top; }
+.cp-comparison-table thead { background: rgba(254,224,64,.08); }
+.cp-comparison-table td { color: var(--cp-muted); }
+.cp-comparison-work { margin: 2rem 0; }
+.cp-comparison-work video { display: block; width: 100%; max-height: 520px; background: #080808; object-fit: contain; }
+.cp-comparison-work figcaption { color: var(--cp-muted); font-size: 13px; line-height: 1.8; margin-top: .8rem; }
+@media (max-width: 600px) {
+  .cp-comparison-page .cp-post-content { padding: 2rem 1.25rem 4rem; }
+  .cp-comparison-page .cp-post-h1 { font-size: clamp(2rem, 9vw, 3rem); }
+  .cp-comparison-page .cp-richtext p { font-size: 15px; }
+}
